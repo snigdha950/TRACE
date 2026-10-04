@@ -1,0 +1,21 @@
+{
+  "schema": "trace-same-event-stage2-validation-protocol/1.0",
+  "status": "FROZEN_NOT_EXECUTED_FINE_REFERENCE_REQUIRED",
+  "purpose": "Test 12 km to 5 km refinement on the same Indian event that generated the Stage-1 threat object.",
+  "required_inputs": [
+    "same-event coarse ensemble or deterministic atmospheric slice near 12 km",
+    "independent high-resolution reference near 5 km or finer",
+    "topography/static predictors when used",
+    "exact Stage-1 crop/refinement request"
+  ],
+  "frozen_primary_route": "deterministic_mean_plus_exact_coarse_projection",
+  "complementary_route": "conditional_diffusion_only_if_safety_gate_passes",
+  "frozen_metrics": ["speed_mae", "q99_absolute_error", "threshold_iou", "coarse_aggregation_error", "psd_error", "false_far_field_extremes", "divergence_vorticity_diagnostics"],
+  "rules": [
+    "Do not substitute HRRR controlled-benchmark scores for India same-event skill.",
+    "Exact coarse consistency remains a hard diagnostic.",
+    "Diffusion cannot become default unless its pre-registered safety/adoption gate passes.",
+    "5 km means output spacing, not 5 km forecast accuracy."
+  ],
+  "blocked_by": "No same-event Indian fine-resolution reference paired with the current Stage-1 events is bundled."
+}

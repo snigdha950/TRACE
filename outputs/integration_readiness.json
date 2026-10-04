@@ -1,0 +1,28 @@
+{
+  "schema": "trace-integration-readiness/1.0",
+  "software_handoff_ready": true,
+  "primary_stage2_route": "deterministic_mean_plus_exact_coarse_projection",
+  "same_event_india_meteorological_validation": false,
+  "operational_route_allowed": false,
+  "research_route_allowed": true,
+  "blocking_reason": "No same-event Indian high-resolution reference is bundled; controlled HRRR reconstruction cannot be relabeled as India skill.",
+  "frozen_protocol": "validation_protocols/SAME_EVENT_STAGE2_PROTOCOL_V1.json",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

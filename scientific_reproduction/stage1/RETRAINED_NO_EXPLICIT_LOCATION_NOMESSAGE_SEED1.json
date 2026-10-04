@@ -1,0 +1,89 @@
+{
+  "status": "PASS_MATCHED_RETRAINED_NO_EXPLICIT_LOCATION_DIAGNOSTIC",
+  "seed": 1,
+  "model": "no_message_ablation",
+  "reason_for_model_choice": "The frozen five-seed evidence does not establish stable message-passing advantage; the no-message nonlinear branch is a matched, much cheaper diagnostic of whether explicit geographic channels dominate learned skill.",
+  "frozen_split": {
+    "train": [
+      "PHAILIN_2013",
+      "HUDHUD_2014"
+    ],
+    "validation": [
+      "TITLI_2018"
+    ],
+    "test": [
+      "BULBUL_2019"
+    ]
+  },
+  "hyperparameters": {
+    "epochs": 50,
+    "patience": 10,
+    "hidden": 32,
+    "blocks": 2,
+    "learning_rate": 0.002,
+    "threshold": 0.5,
+    "minimum_area_km2": 5000
+  },
+  "full_features": {
+    "mean_iou": 0.451678789975567,
+    "mean_ap": 0.5892665197039961,
+    "rows": [
+      {
+        "lead_hours": 72,
+        "area_weighted_iou": 0.4593323014450724,
+        "average_precision": 0.5894837235262497
+      },
+      {
+        "lead_hours": 96,
+        "area_weighted_iou": 0.45332007772511457,
+        "average_precision": 0.6088949684895609
+      },
+      {
+        "lead_hours": 120,
+        "area_weighted_iou": 0.44238399075651386,
+        "average_precision": 0.5694208670961777
+      }
+    ],
+    "best_epoch": 17,
+    "best_validation_bce": 0.5412722229957581
+  },
+  "without_explicit_location_features": {
+    "mean_iou": 0.4366344536627011,
+    "mean_ap": 0.5647068799501217,
+    "rows": [
+      {
+        "lead_hours": 72,
+        "area_weighted_iou": 0.48875093606230385,
+        "average_precision": 0.6403289870673549
+      },
+      {
+        "lead_hours": 96,
+        "area_weighted_iou": 0.4116238248118451,
+        "average_precision": 0.5423801648292396
+      },
+      {
+        "lead_hours": 120,
+        "area_weighted_iou": 0.40952860011395414,
+        "average_precision": 0.5114114879537708
+      }
+    ],
+    "best_epoch": 49,
+    "best_validation_bce": 0.6290455261866251
+  },
+  "removed_features": [
+    "sin_lat",
+    "cos_lat",
+    "sin_lon",
+    "cos_lon"
+  ],
+  "retained_geometry": "Spherical mesh_xyz and relative edge geometry retained; only explicit absolute location channels were removed.",
+  "delta_no_location_minus_full": {
+    "mean_iou": -0.015044336312865891,
+    "mean_ap": -0.02455963975387443
+  },
+  "relative_change_percent": {
+    "mean_iou": -3.3307599663202514,
+    "mean_ap": -4.167832200310883
+  },
+  "interpretation": "Explicit geographic channels contribute modestly in this single-seed matched diagnostic, but removing them does not collapse the nonlinear footprint skill. This is not a five-seed full-GNN geographic-generalization proof."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "counts": {
+    "train": 8,
+    "validation": 4,
+    "test": 5
+  },
+  "train_events": [
+    "LAURA_2020",
+    "DELTA_2020"
+  ],
+  "validation_events": [
+    "SALLY_2020"
+  ],
+  "test_events": [
+    "IDA_2021"
+  ],
+  "geographic_exclusions": 5,
+  "finite": true,
+  "grid_shapes": {
+    "coarse": [
+      17,
+      2,
+      20,
+      20
+    ],
+    "fine": [
+      17,
+      2,
+      48,
+      48
+    ]
+  },
+  "sha256": "f6322db9ca20c02f23308e68b8e32af63981b0c934ecf741438a91969eba9698",
+  "no_performance_executed": true
+}

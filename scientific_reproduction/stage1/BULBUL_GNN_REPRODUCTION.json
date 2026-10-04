@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "expected": {
+    "mean_iou": 0.42979942438385327,
+    "mean_ap": 0.6069505476562604
+  },
+  "recomputed": {
+    "mean_iou": 0.4297994243838533,
+    "mean_ap": 0.6069505476562607,
+    "lead_means": {
+      "72": 0.45995295787397117,
+      "96": 0.4385651709380727,
+      "120": 0.390880144339516
+    },
+    "independent_verification_times": 1,
+    "rows": [
+      {
+        "seed": 1,
+        "lead_hours": 72,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.4358494873843024,
+        "average_precision": 0.5741583868695264
+      },
+      {
+        "seed": 1,
+        "lead_hours": 96,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.390418600631729,
+        "average_precision": 0.5599721759315043
+      },
+      {
+        "seed": 1,
+        "lead_hours": 120,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.36955917487221834,
+        "average_precision": 0.5260714916954086
+      },
+      {
+        "seed": 2,
+        "lead_hours": 72,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.50413232702475,
+        "average_precision": 0.6528489178034359
+      },
+      {
+        "seed": 2,
+        "lead_hours": 96,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.46701111257127037,
+        "average_precision": 0.6830844314419595
+      },
+      {
+        "seed": 2,
+        "lead_hours": 120,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.42120535488394717,
+        "average_precision": 0.5995706838329828
+      },
+      {
+        "seed": 3,
+        "lead_hours": 72,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.4701518923791424,
+        "average_precision": 0.5435462921750562
+      },
+      {
+        "seed": 3,
+        "lead_hours": 96,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.4466794125967701,
+        "average_precision": 0.5995564193559723
+      },
+      {
+        "seed": 3,
+        "lead_hours": 120,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.3773892991556361,
+        "average_precision": 0.5256588396115568
+      },
+      {
+        "seed": 4,
+        "lead_hours": 72,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.4592889924171486,
+        "average_precision": 0.6979022320672699
+      },
+      {
+        "seed": 4,
+        "lead_hours": 96,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.46918838813814323,
+        "average_precision": 0.7092668079340194
+      },
+      {
+        "seed": 4,
+        "lead_hours": 120,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.422090083945927,
+        "average_precision": 0.663782843400867
+      },
+      {
+        "seed": 5,
+        "lead_hours": 72,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.43034209016451264,
+        "average_precision": 0.5887767603726246
+      },
+      {
+        "seed": 5,
+        "lead_hours": 96,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.41952834075245077,
+        "average_precision": 0.583243765124768
+      },
+      {
+        "seed": 5,
+        "lead_hours": 120,
+        "valid_time": "2019-11-09T00:00:00+00:00",
+        "area_weighted_iou": 0.3641568088398516,
+        "average_precision": 0.5968181672269559
+      }
+    ]
+  },
+  "interpretation": "5 frozen seeds x 3 correlated forecast leads, all verifying one BULBUL valid time; not 15 independent weather cases."
+}

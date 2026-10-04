@@ -1,0 +1,1364 @@
+{
+  "status": "REAL_HRRR_CONTROLLED_DATASET_COMPLETE",
+  "dataset_sha256": "f6322db9ca20c02f23308e68b8e32af63981b0c934ecf741438a91969eba9698",
+  "dataset": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/HRRR_CONTROLLED_12_TO_5_v2.npz",
+  "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+  "runtime_seconds": 120.88549941199994,
+  "geographic_exclusions": [
+    {
+      "date": "20200825",
+      "hour": "12",
+      "event_id": "LAURA_2020",
+      "split": "train",
+      "center_lat": 23.4,
+      "center_lon": -86.2,
+      "besttrack_storm_id": "AL132020",
+      "besttrack_valid_time": "20200825T1200Z",
+      "reason": "OUT_OF_DOMAIN_CROP 2020082512 center_error_km=36.38891432724564 grid_xy=1295,0",
+      "classification": "predeclared geographic coverage exclusion; no performance inspected"
+    },
+    {
+      "date": "20200825",
+      "hour": "18",
+      "event_id": "LAURA_2020",
+      "split": "train",
+      "center_lat": 24.1,
+      "center_lon": -87.5,
+      "besttrack_storm_id": "AL132020",
+      "besttrack_valid_time": "20200825T1800Z",
+      "reason": "OUT_OF_DOMAIN_CROP 2020082518 center_error_km=0.6878474163409402 grid_xy=1247,9",
+      "classification": "predeclared geographic coverage exclusion; no performance inspected"
+    },
+    {
+      "date": "20201008",
+      "hour": "12",
+      "event_id": "DELTA_2020",
+      "split": "train",
+      "center_lat": 23.7,
+      "center_lon": -92.4,
+      "besttrack_storm_id": "AL262020",
+      "besttrack_valid_time": "20201008T1200Z",
+      "reason": "OUT_OF_DOMAIN_CROP 2020100812 center_error_km=59.48385158889791 grid_xy=1078,0",
+      "classification": "predeclared geographic coverage exclusion; no performance inspected"
+    },
+    {
+      "date": "20201008",
+      "hour": "18",
+      "event_id": "DELTA_2020",
+      "split": "train",
+      "center_lat": 24.5,
+      "center_lon": -93.1,
+      "besttrack_storm_id": "AL262020",
+      "besttrack_valid_time": "20201008T1800Z",
+      "reason": "OUT_OF_DOMAIN_CROP 2020100818 center_error_km=0.7966473817342552 grid_xy=1052,9",
+      "classification": "predeclared geographic coverage exclusion; no performance inspected"
+    },
+    {
+      "date": "20210828",
+      "hour": "12",
+      "event_id": "IDA_2021",
+      "split": "test",
+      "center_lat": 24.4,
+      "center_lon": -85.7,
+      "besttrack_storm_id": "AL092021",
+      "besttrack_valid_time": "20210828T1200Z",
+      "reason": "OUT_OF_DOMAIN_CROP 2021082812 center_error_km=1.180211283314383 grid_xy=1308,28",
+      "classification": "predeclared geographic coverage exclusion; no performance inspected"
+    }
+  ],
+  "samples": [
+    {
+      "source": {
+        "date": "20200826",
+        "hour": "12",
+        "event_id": "LAURA_2020",
+        "split": "train",
+        "center_lat": 26.4,
+        "center_lon": -91.4,
+        "besttrack_storm_id": "AL132020",
+        "besttrack_valid_time": "20200826T1200Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020082612_center_e1ffee9574.npz",
+        "patch_sha256": "027a4d512b04172757fd5b2c917ae368a6250be45258b7e910b1c24234b43c1f",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200826/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              39832463,
+              41024368
+            ],
+            "message_sha256": "28d74bc5d3bc5fb36ac201f177123fbc309c7829764aca9e17c736b21ae4e6cb",
+            "bytes": 1191906,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200826/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              41024369,
+              42202735
+            ],
+            "message_sha256": "1d6492d5e3892edbacf9acf2a9fb2fe86418e9c658bf2e9f7edc5d5b787885ec",
+            "bytes": 1178367,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1066,
+          44
+        ],
+        "center_to_grid_error_km": 0.6755611366363004,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 8.881784197001252e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20200826",
+        "hour": "18",
+        "event_id": "LAURA_2020",
+        "split": "train",
+        "center_lat": 27.3,
+        "center_lon": -92.5,
+        "besttrack_storm_id": "AL132020",
+        "besttrack_valid_time": "20200826T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020082618_center_48d9a5ee72.npz",
+        "patch_sha256": "11b22c03756d181f81cfe31d730fa161d2fd7560fcbada157b62d731885a1ac6",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200826/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              39729594,
+              40791597
+            ],
+            "message_sha256": "3dc5e022cc5d76d431b70540332fa54aa64240cd7da3c793f90c00638b7e2cd7",
+            "bytes": 1062004,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200826/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              40791598,
+              41794142
+            ],
+            "message_sha256": "009131205caf1eb3ff7073f10bd8eb7f2211e1e9796f64ed3b5256a3008a0c59",
+            "bytes": 1002545,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1027,
+          76
+        ],
+        "center_to_grid_error_km": 0.5431859752982108,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 0.0,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20200827",
+        "hour": "12",
+        "event_id": "LAURA_2020",
+        "split": "train",
+        "center_lat": 31.2,
+        "center_lon": -93.3,
+        "besttrack_storm_id": "AL132020",
+        "besttrack_valid_time": "20200827T1200Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020082712_center_1e2b7c6f7c.npz",
+        "patch_sha256": "cca29f17829255d7d4e719f8cf6f45a72c6f1b7a1801e9d63b3448e4e1df9686",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200827/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              39819347,
+              41019582
+            ],
+            "message_sha256": "13967083dbe6fda81f14c38fe1fce7cdfaf2f0bc81dfaa12a16286a12ad373c9",
+            "bytes": 1200236,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200827/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              41019583,
+              42190804
+            ],
+            "message_sha256": "c566c3d2dece91ae885c2722fe212b6ca17e4dd5efd3e613de3c5e4f2f732c0c",
+            "bytes": 1171222,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          993,
+          221
+        ],
+        "center_to_grid_error_km": 1.0979948669187325,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 5.551115123125783e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20200827",
+        "hour": "18",
+        "event_id": "LAURA_2020",
+        "split": "train",
+        "center_lat": 32.8,
+        "center_lon": -92.9,
+        "besttrack_storm_id": "AL132020",
+        "besttrack_valid_time": "20200827T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020082718_center_c3d8c9391e.npz",
+        "patch_sha256": "7b3bba0da2eb2880be8368daec1888b017ca73d2ad4786c6611735dbd85184d8",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200827/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              39521518,
+              40572348
+            ],
+            "message_sha256": "2459731a77293a39209ef8fba78feafc5b2d735a31cfce2903359d6531ae5ebd",
+            "bytes": 1050831,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200827/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              40572349,
+              41574144
+            ],
+            "message_sha256": "0d01bbd9c1d0ebd5b99712572796a8b79fa07de46edea0951dfb71b4a74455aa",
+            "bytes": 1001796,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1003,
+          281
+        ],
+        "center_to_grid_error_km": 0.451211838040935,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 2.220446049250313e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20201009",
+        "hour": "12",
+        "event_id": "DELTA_2020",
+        "split": "train",
+        "center_lat": 27.5,
+        "center_lon": -93.8,
+        "besttrack_storm_id": "AL262020",
+        "besttrack_valid_time": "20201009T1200Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020100912_center_8a86f1f1ee.npz",
+        "patch_sha256": "d13ad97a0ec5bac7b571e8a47cc40bc88bc7f2f758734ba74f72a89486e64f5c",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20201009/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              40526122,
+              41787192
+            ],
+            "message_sha256": "bdbec9ad9bc7cffd26ac322f96e21bc9f31f81355df4c070ed3380aa48c007d5",
+            "bytes": 1261071,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20201009/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              41787193,
+              43010112
+            ],
+            "message_sha256": "fdc628cd24ce984f3ed4f467a0e9f6cfad083b31f35bc1357238c59f88e7f5d9",
+            "bytes": 1222920,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          983,
+          81
+        ],
+        "center_to_grid_error_km": 1.2521180336206938,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 0.0,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20201009",
+        "hour": "18",
+        "event_id": "DELTA_2020",
+        "split": "train",
+        "center_lat": 28.7,
+        "center_lon": -93.6,
+        "besttrack_storm_id": "AL262020",
+        "besttrack_valid_time": "20201009T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020100918_center_380a15d0b8.npz",
+        "patch_sha256": "837d8bc9e0e2586f0d1216823bb3c26f9b32dc5deaa052e18ee211f4a8b79c62",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20201009/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              39427227,
+              40481589
+            ],
+            "message_sha256": "a1cb61b70a3716e6862d7c33f94f910deae9f7fd2474a4f4441c4a29b1629a10",
+            "bytes": 1054363,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20201009/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              40481590,
+              41497798
+            ],
+            "message_sha256": "93368e45bbfdc8df7d98f5e5d0cca048bfeb91a9ca7b209021e6c449774e978b",
+            "bytes": 1016209,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          988,
+          127
+        ],
+        "center_to_grid_error_km": 0.9075917671060934,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 0.0,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20201010",
+        "hour": "12",
+        "event_id": "DELTA_2020",
+        "split": "train",
+        "center_lat": 32.5,
+        "center_lon": -91.4,
+        "besttrack_storm_id": "AL262020",
+        "besttrack_valid_time": "20201010T1200Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020101012_center_191dda05fe.npz",
+        "patch_sha256": "47bfead19a51a33e17eb43a79a6a6b2417cc359134df12094f0613ebd256207e",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20201010/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              41392559,
+              42642180
+            ],
+            "message_sha256": "d025147254f8298daa3fff56273e1a2d9bf560fb967f4d03c63eb1f9e4a24a20",
+            "bytes": 1249622,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20201010/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              42642181,
+              43878834
+            ],
+            "message_sha256": "9d4ca786307bd74608e76bdd3da747772bd61c5bc2e9b1a11b840abd1e513f15",
+            "bytes": 1236654,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1051,
+          273
+        ],
+        "center_to_grid_error_km": 1.2693325553024395,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 2.220446049250313e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20201010",
+        "hour": "18",
+        "event_id": "DELTA_2020",
+        "split": "train",
+        "center_lat": 33.3,
+        "center_lon": -90.6,
+        "besttrack_storm_id": "AL262020",
+        "besttrack_valid_time": "20201010T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020101018_center_3e9bac73f6.npz",
+        "patch_sha256": "7ca10371fe06eefa2d20065521886ee7cb830f6e6bc9f32acc647a8081697f16",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20201010/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              40785652,
+              41861648
+            ],
+            "message_sha256": "83f4bc19ffdb4f81adad1c66562e85d93fe0a78686f97d7a16f29c3ca47fed40",
+            "bytes": 1075997,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20201010/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              41861649,
+              42911133
+            ],
+            "message_sha256": "643e96fb46e67f0c24b0acb4524db606b2cf2a542f21342f8f82cb17f1bada39",
+            "bytes": 1049485,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1074,
+          304
+        ],
+        "center_to_grid_error_km": 1.2655263896203888,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 1.1102230246251565e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20200915",
+        "hour": "12",
+        "event_id": "SALLY_2020",
+        "split": "validation",
+        "center_lat": 29.0,
+        "center_lon": -88.1,
+        "besttrack_storm_id": "AL192020",
+        "besttrack_valid_time": "20200915T1200Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020091512_center_6488fe86e9.npz",
+        "patch_sha256": "05b58ffa4d68ab0201f5279f0d9b892f3894d882b3eed4fc6ae9136d86b612df",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200915/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              40052967,
+              41289153
+            ],
+            "message_sha256": "c71b412d69639baab565569f2d8c5066907996d314f7741b739d29c39c53b253",
+            "bytes": 1236187,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200915/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              41289154,
+              42505546
+            ],
+            "message_sha256": "b49bb407473edcfda171acb1437dafd3af869be43734cdfbd0ffafaf53e98cce",
+            "bytes": 1216393,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1167,
+          151
+        ],
+        "center_to_grid_error_km": 1.3782873540116896,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 0.0,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20200915",
+        "hour": "18",
+        "event_id": "SALLY_2020",
+        "split": "validation",
+        "center_lat": 29.3,
+        "center_lon": -88.1,
+        "besttrack_storm_id": "AL192020",
+        "besttrack_valid_time": "20200915T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020091518_center_d4cbfb4a44.npz",
+        "patch_sha256": "2706f16d042b16fa420abcff2938307dd2f381d87eb903f70a3cdc11c1b60e0e",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200915/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              39603257,
+              40653663
+            ],
+            "message_sha256": "9d5176ed985f33079f765c1c2c8f56a0ea51626140125644089822d76097e38a",
+            "bytes": 1050407,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200915/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              40653664,
+              41660196
+            ],
+            "message_sha256": "487c734c08a7688da4f0a0dd6c717edeabbb7afd4c3ca3d16d42ba75f78a9cee",
+            "bytes": 1006533,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1166,
+          162
+        ],
+        "center_to_grid_error_km": 1.3675984979596587,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 4.440892098500626e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20200916",
+        "hour": "12",
+        "event_id": "SALLY_2020",
+        "split": "validation",
+        "center_lat": 30.5,
+        "center_lon": -87.6,
+        "besttrack_storm_id": "AL192020",
+        "besttrack_valid_time": "20200916T1200Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020091612_center_3eb486a59f.npz",
+        "patch_sha256": "176c3d2857be850fa53ec0181941d8e5a34857fdc089a35c5b70cd4bd1386455",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200916/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              39919094,
+              41128601
+            ],
+            "message_sha256": "52244561c2e8db145e9a643bc3ed8c48dc25209a270b92ed629d62d175621c0e",
+            "bytes": 1209508,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200916/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              41128602,
+              42327919
+            ],
+            "message_sha256": "d5e17685e92e1bda1c76fc041655f294abbc3a1572cd896254ee2e9c82376f86",
+            "bytes": 1199318,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1178,
+          209
+        ],
+        "center_to_grid_error_km": 1.0191536097178935,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 6.661338147750939e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20200916",
+        "hour": "18",
+        "event_id": "SALLY_2020",
+        "split": "validation",
+        "center_lat": 31.1,
+        "center_lon": -87.2,
+        "besttrack_storm_id": "AL192020",
+        "besttrack_valid_time": "20200916T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2020091618_center_7d5eac320e.npz",
+        "patch_sha256": "840b8595051da72b23281fc0ca9a3b78d60ad73a80b72e9f4e591d794c486bc7",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200916/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              39556293,
+              40621751
+            ],
+            "message_sha256": "769edfad65fa82a0cb6b68d9d50358232e1254126999837ad02f03f7bf1c33c7",
+            "bytes": 1065459,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20200916/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              40621752,
+              41649029
+            ],
+            "message_sha256": "f186a128a29daea36a7ffb55baddcce3a04284d0b9ba2a8a313f73e29f586d14",
+            "bytes": 1027278,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1188,
+          232
+        ],
+        "center_to_grid_error_km": 1.4533347321456385,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 2.914335439641036e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20210828",
+        "hour": "18",
+        "event_id": "IDA_2021",
+        "split": "test",
+        "center_lat": 25.6,
+        "center_lon": -86.6,
+        "besttrack_storm_id": "AL092021",
+        "besttrack_valid_time": "20210828T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2021082818_center_df5aec6257.npz",
+        "patch_sha256": "eb796b6a11aafe60a1ddd5618db239a5c856608d12c29e39af12096363e08855",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210828/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              42922328,
+              45303942
+            ],
+            "message_sha256": "0969fbbb540a3608c4f12a329e4c16d0b2a5c596b92ab01f426186832f769003",
+            "bytes": 2381615,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210828/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              45303943,
+              47685557
+            ],
+            "message_sha256": "c75ba3543c0940e5a98221d3fa3a2f1d9f96b451eeec615e1dbe5aa828328459",
+            "bytes": 2381615,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1232,
+          29
+        ],
+        "center_to_grid_error_km": 1.2531492317686632,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 0.0,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20210829",
+        "hour": "12",
+        "event_id": "IDA_2021",
+        "split": "test",
+        "center_lat": 28.5,
+        "center_lon": -89.6,
+        "besttrack_storm_id": "AL092021",
+        "besttrack_valid_time": "20210829T1200Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2021082912_center_66805593fb.npz",
+        "patch_sha256": "506de1c6af1397d89b1a1762df2f730764de9ecd7b074126ad466b80be325f40",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210829/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              42601926,
+              45221682
+            ],
+            "message_sha256": "51d98c07f3e02549952624066ae9e8f0a708aef172a85fdd2ddb8a961149674d",
+            "bytes": 2619757,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210829/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              45221683,
+              47841439
+            ],
+            "message_sha256": "b15e2e84fa25a6b0656ae6dc40cd845f14912e585638401f3cf1efd49e1e1e14",
+            "bytes": 2619757,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1120,
+          128
+        ],
+        "center_to_grid_error_km": 0.5783252269065193,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 0.0,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20210829",
+        "hour": "18",
+        "event_id": "IDA_2021",
+        "split": "test",
+        "center_lat": 29.2,
+        "center_lon": -90.4,
+        "besttrack_storm_id": "AL092021",
+        "besttrack_valid_time": "20210829T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2021082918_center_02ab30c4d6.npz",
+        "patch_sha256": "5f10cc004ed6e26e97a60d8f3f46a9dba026c151f30f9d7bfdb6f926e1cf8994",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210829/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              43060318,
+              45680074
+            ],
+            "message_sha256": "73995e3dd63e8938c96f4bddf5dba9c4679a1bf4188f2b707774560f48080221",
+            "bytes": 2619757,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210829/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              45680075,
+              48299831
+            ],
+            "message_sha256": "19ec379a477f3a0e1126a1590c49b0085dca48cb2704b9dcc88ff048f7fe5578",
+            "bytes": 2619757,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1092,
+          152
+        ],
+        "center_to_grid_error_km": 1.2163786563192305,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 0.0,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20210830",
+        "hour": "12",
+        "event_id": "IDA_2021",
+        "split": "test",
+        "center_lat": 31.5,
+        "center_lon": -90.9,
+        "besttrack_storm_id": "AL092021",
+        "besttrack_valid_time": "20210830T1200Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2021083012_center_9f01d4130b.npz",
+        "patch_sha256": "79036b62faf0625f985907205e0261294411fd996c1d60413513cb47d795e351",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210830/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              42296511,
+              44439982
+            ],
+            "message_sha256": "7807b9b8acffe36d528ce30d1bf67b60e66809246473f134287473d32cef8046",
+            "bytes": 2143472,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210830/conus/hrrr.t12z.wrfsfcf00.grib2",
+            "range": [
+              44439983,
+              46821597
+            ],
+            "message_sha256": "c1364f53a657c1aa75feef69de1ca95a1de2abe602d0c628432a232c578d1f82",
+            "bytes": 2381615,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1069,
+          237
+        ],
+        "center_to_grid_error_km": 1.416600987875951,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 0.0,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    },
+    {
+      "source": {
+        "date": "20210830",
+        "hour": "18",
+        "event_id": "IDA_2021",
+        "split": "test",
+        "center_lat": 32.2,
+        "center_lon": -90.5,
+        "besttrack_storm_id": "AL092021",
+        "besttrack_valid_time": "20210830T1800Z",
+        "patch_path": "/workspace/scratch/20ef86c2ee7f/trace_v8_work/data_stage2_v2/patches/HRRR_2021083018_center_629de0031a.npz",
+        "patch_sha256": "44c4949f14c8a51268ecf42d14ce56b84665c111d2833dffd20a59070f70ddcc",
+        "kind": "HRRR f00 atmospheric analysis; controlled reconstruction, not independent future forecast truth",
+        "messages": [
+          {
+            "variable": "UGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210830/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              43019129,
+              45162600
+            ],
+            "message_sha256": "0ea5afed11f364f3cf2fc5056de8b9a6b44de2f44c587396c5cbbfe4b68719cd",
+            "bytes": 2143472,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          },
+          {
+            "variable": "VGRD",
+            "source_url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20210830/conus/hrrr.t18z.wrfsfcf00.grib2",
+            "range": [
+              45162601,
+              47544215
+            ],
+            "message_sha256": "22d2251cf7e8321e3cb1ee7388bb914a6959354d0068c14d57e7890e8bd2ce0d",
+            "bytes": 2381615,
+            "grid_type": "lambert",
+            "dx_m": 3000.0,
+            "dy_m": 3000.0,
+            "uv_relative_to_grid": 1,
+            "units": "m s-1"
+          }
+        ],
+        "patch_origin_grid_xy": [
+          1080,
+          264
+        ],
+        "center_to_grid_error_km": 1.5440996165206764,
+        "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+        "wind_components": "native projected-grid U/V; speed invariant to local rotation; derivative diagnostics in model projected coordinates"
+      },
+      "pair": {
+        "source_dx_km": 3,
+        "target_dx_km": 5,
+        "coarse_dx_km": 12,
+        "source_shape": [
+          2,
+          80,
+          80
+        ],
+        "target_shape": [
+          2,
+          48,
+          48
+        ],
+        "coarse_shape": [
+          2,
+          20,
+          20
+        ],
+        "max_domain_mean_drift": 3.3306690738754696e-16,
+        "claim": "Controlled 12->5 km benchmark, not operational NEPS-G validation."
+      }
+    }
+  ],
+  "claim": "Genuine high-resolution analysis source. Controlled 12->5km reconstruction only; no India or NEPS-G operational skill."
+}

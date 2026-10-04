@@ -1,0 +1,69 @@
+{
+  "schema": "trace-provider-ingest-validation/1.0",
+  "status": "PASS_SCHEMA_COMPATIBLE",
+  "provider": "NCMRWF NEPS-G candidate metadata fixture",
+  "checks": {
+    "latitude_axis_present": true,
+    "longitude_axis_present": true,
+    "ensemble_member_dimension_present": true,
+    "initialization_time_present": true,
+    "valid_time_or_lead_present": true,
+    "meteorological_variable_present": true,
+    "positive_dimensions": true
+  },
+  "normalized": {
+    "provider_name": "NCMRWF NEPS-G candidate metadata fixture",
+    "member_dimension": "member",
+    "ensemble_size": 23,
+    "latitude_axis": "lat",
+    "longitude_axis": "lon",
+    "recognized_meteorological_variables": [
+      "t2m",
+      "u10",
+      "v10"
+    ],
+    "lead_hours": [
+      72.0,
+      96.0,
+      120.0,
+      144.0,
+      168.0,
+      192.0,
+      216.0,
+      240.0
+    ],
+    "medium_range_leads_72_240h": [
+      72.0,
+      96.0,
+      120.0,
+      144.0,
+      168.0,
+      192.0,
+      216.0,
+      240.0
+    ]
+  },
+  "medium_range_status": "PASS_EXPLICIT_3_TO_10_DAY_LEAD_PRESENT",
+  "trace_adapter_compatible": true,
+  "direct_nepsg_skill_claim_supported": false,
+  "scientific_skill_validation": false,
+  "boundary": "This validates input structure/readiness only. It does not establish forecast skill, calibrated probability, or direct NEPS-G validation.",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

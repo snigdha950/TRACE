@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "samples": 18,
+  "splits": {
+    "train": 6,
+    "validation": 3,
+    "test": 9
+  },
+  "mesh_nodes": 50177,
+  "directed_edges": 299264,
+  "median_mesh_spacing_km": 15.7811279296875,
+  "target_erasure_count": 0,
+  "minimum_nonempty_roundtrip_area_iou": 1.0,
+  "minimum_peak_change_ms": -0.7957496643066406,
+  "maximum_peak_change_ms": -0.010165214538574219,
+  "climate_samples_per_nonfani": 405,
+  "interpretation": "original independent ERA5 grid remains evaluation target. Remapping losses disclosed; no test tuning."
+}

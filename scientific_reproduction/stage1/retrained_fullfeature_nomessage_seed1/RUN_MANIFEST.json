@@ -1,0 +1,53 @@
+{
+  "sample_sha256": {
+    "gnn_samples/HUDHUD_2014_120.npz": "e567b747b1136b9d8177159d0ab0f12f4957c239972038db92a636c059ecb4b8",
+    "gnn_samples/HUDHUD_2014_72.npz": "abf00ea58ab473a2611a4aa238ab80ff79efc35e8c5e4cf52ac3d8dc23db8ef4",
+    "gnn_samples/HUDHUD_2014_96.npz": "3490d148635993992ea1030e945456470c758f4d132706627f4aac705e2b801d",
+    "gnn_samples/PHAILIN_2013_120.npz": "e680eba9d308a3a44884a22dbe1b36ee35276b5f63e44bc2eb26931d7ca45474",
+    "gnn_samples/PHAILIN_2013_72.npz": "726a7f32d3d0d89cc12ca487f26cbdf5d208780f05fd33280488f2a3320dbdb5",
+    "gnn_samples/PHAILIN_2013_96.npz": "940895456ac4b18d3c12994189e4cd2a85d2005fca39b9892a76008e7ce7ee62",
+    "gnn_samples/TITLI_2018_120.npz": "580352399765f812f0b86db9859649328b6f1fcb22c78aaf3e928e1180985c54",
+    "gnn_samples/TITLI_2018_72.npz": "e0d9934b6c1b20598edc9e15177232b57ae3aab9be84c2392ce8bb0fb45086cd",
+    "gnn_samples/TITLI_2018_96.npz": "1373796698cdca1d484cbcca037e7ea13adf766eb18df625edc2506ae705cf60",
+    "bulbul_frozen/BULBUL_2019_120.npz": "d65b462566d83dfcdd00cb715d028d3bd11a3d4b5d8296247e3b38fa11997de1",
+    "bulbul_frozen/BULBUL_2019_72.npz": "4100328676d871f628f2c033c19a43c09b6c7b31dfcfead1319c204603dc3106",
+    "bulbul_frozen/BULBUL_2019_96.npz": "263c86e51028a4d183105b4f00d438b3c1d73acbf68f95028270ec4aeb52eba8"
+  },
+  "timestamp_utc": "2026-10-04T10:09:29.246381+00:00",
+  "dependency_code_sha256": {
+    "trace_spherical_gnn.py": "b5ebe8e50daa896d74d99c459a247c9e9136c07872a753898ba59f8b3068de77",
+    "trace_learned_evaluation.py": "dfa4382f6f37b4d853ec0db33a940412abd71fad635674d32ae364f02b327c7c",
+    "trace_object_verify.py": "c34dd7600fcefa588b3333a1b510a8a802db0ff198ec3aeeff938552c1c61090"
+  },
+  "seed": 1,
+  "config": {
+    "dataset_manifest": "/mnt/data/TRACE_FINAL_PROTOTYPE_V1_8_DIR/scientific_reproduction/stage1/PORTABLE_DATASET_MANIFEST.json",
+    "epochs": 50,
+    "patience": 10,
+    "hidden": 32,
+    "blocks": 2,
+    "lr": 0.002,
+    "seed": 1,
+    "out": "/mnt/data/TRACE_FINAL_PROTOTYPE_V1_8_DIR/scientific_reproduction/stage1/retrained_fullfeature_nomessage_seed1",
+    "no_messages": true
+  },
+  "code_sha256": "58d3a349fc473b84211e05609d55f298c6596c7d0d2a760df197cde8b826f06a",
+  "dataset_manifest_sha256": "c76b1fbf3dea8ef1ab2232fe44077b23d9b7bcca75dd9e35471df752194b255e",
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "hardware": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "training_events": [
+    "HUDHUD_2014",
+    "PHAILIN_2013"
+  ],
+  "validation_events": [
+    "TITLI_2018"
+  ],
+  "test_events": [
+    "BULBUL_2019"
+  ],
+  "uncertainty": "class-weighted discriminator score; NOT calibrated probability"
+}

@@ -1,0 +1,100 @@
+{
+  "status": "PORTABLE_REPRODUCTION_MANIFEST",
+  "samples": [
+    {
+      "path": "gnn_samples/HUDHUD_2014_120.npz",
+      "sample_id": "HUDHUD_2014_120",
+      "event_id": "HUDHUD_2014",
+      "split": "train",
+      "sha256": "e567b747b1136b9d8177159d0ab0f12f4957c239972038db92a636c059ecb4b8"
+    },
+    {
+      "path": "gnn_samples/HUDHUD_2014_72.npz",
+      "sample_id": "HUDHUD_2014_72",
+      "event_id": "HUDHUD_2014",
+      "split": "train",
+      "sha256": "abf00ea58ab473a2611a4aa238ab80ff79efc35e8c5e4cf52ac3d8dc23db8ef4"
+    },
+    {
+      "path": "gnn_samples/HUDHUD_2014_96.npz",
+      "sample_id": "HUDHUD_2014_96",
+      "event_id": "HUDHUD_2014",
+      "split": "train",
+      "sha256": "3490d148635993992ea1030e945456470c758f4d132706627f4aac705e2b801d"
+    },
+    {
+      "path": "gnn_samples/PHAILIN_2013_120.npz",
+      "sample_id": "PHAILIN_2013_120",
+      "event_id": "PHAILIN_2013",
+      "split": "train",
+      "sha256": "e680eba9d308a3a44884a22dbe1b36ee35276b5f63e44bc2eb26931d7ca45474"
+    },
+    {
+      "path": "gnn_samples/PHAILIN_2013_72.npz",
+      "sample_id": "PHAILIN_2013_72",
+      "event_id": "PHAILIN_2013",
+      "split": "train",
+      "sha256": "726a7f32d3d0d89cc12ca487f26cbdf5d208780f05fd33280488f2a3320dbdb5"
+    },
+    {
+      "path": "gnn_samples/PHAILIN_2013_96.npz",
+      "sample_id": "PHAILIN_2013_96",
+      "event_id": "PHAILIN_2013",
+      "split": "train",
+      "sha256": "940895456ac4b18d3c12994189e4cd2a85d2005fca39b9892a76008e7ce7ee62"
+    },
+    {
+      "path": "gnn_samples/TITLI_2018_120.npz",
+      "sample_id": "TITLI_2018_120",
+      "event_id": "TITLI_2018",
+      "split": "validation",
+      "sha256": "580352399765f812f0b86db9859649328b6f1fcb22c78aaf3e928e1180985c54"
+    },
+    {
+      "path": "gnn_samples/TITLI_2018_72.npz",
+      "sample_id": "TITLI_2018_72",
+      "event_id": "TITLI_2018",
+      "split": "validation",
+      "sha256": "e0d9934b6c1b20598edc9e15177232b57ae3aab9be84c2392ce8bb0fb45086cd"
+    },
+    {
+      "path": "gnn_samples/TITLI_2018_96.npz",
+      "sample_id": "TITLI_2018_96",
+      "event_id": "TITLI_2018",
+      "split": "validation",
+      "sha256": "1373796698cdca1d484cbcca037e7ea13adf766eb18df625edc2506ae705cf60"
+    },
+    {
+      "path": "bulbul_frozen/BULBUL_2019_120.npz",
+      "sample_id": "BULBUL_2019_120",
+      "event_id": "BULBUL_2019",
+      "split": "test",
+      "sha256": "d65b462566d83dfcdd00cb715d028d3bd11a3d4b5d8296247e3b38fa11997de1"
+    },
+    {
+      "path": "bulbul_frozen/BULBUL_2019_72.npz",
+      "sample_id": "BULBUL_2019_72",
+      "event_id": "BULBUL_2019",
+      "split": "test",
+      "sha256": "4100328676d871f628f2c033c19a43c09b6c7b31dfcfead1319c204603dc3106"
+    },
+    {
+      "path": "bulbul_frozen/BULBUL_2019_96.npz",
+      "sample_id": "BULBUL_2019_96",
+      "event_id": "BULBUL_2019",
+      "split": "test",
+      "sha256": "263c86e51028a4d183105b4f00d438b3c1d73acbf68f95028270ec4aeb52eba8"
+    }
+  ],
+  "training_events": [
+    "PHAILIN_2013",
+    "HUDHUD_2014"
+  ],
+  "validation_events": [
+    "TITLI_2018"
+  ],
+  "test_events": [
+    "BULBUL_2019"
+  ],
+  "note": "Portable subset restored from executed TRACE workspace. BULBUL remains test only."
+}

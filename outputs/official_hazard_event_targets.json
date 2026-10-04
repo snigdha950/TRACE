@@ -1,0 +1,62 @@
+{
+  "schema": "trace-official-hazard-event-target-registry/1.0",
+  "purpose": "Freeze real official India heat/cold event targets for future held-out TRACE multi-hazard evaluation. This registry is contextual ground truth for event selection, not executed forecast-skill evidence.",
+  "selection_rule": "Events are selected from official IMD reports before any TRACE hazard-model performance is viewed. No threshold may be tuned using future test-event skill.",
+  "events": [
+    {
+      "event_id": "INDIA_HEATWAVE_2019_06_03_04",
+      "hazard": "heat_wave_severe_heat_wave",
+      "official_source": "India Meteorological Department",
+      "official_report_date": "2019-06-04",
+      "official_source_url": "https://internal.imd.gov.in/section/nhac/dynamic/fdpheatreport2019.pdf",
+      "reported_regions": [
+        "West Rajasthan",
+        "East Rajasthan",
+        "Madhya Pradesh",
+        "Vidarbha"
+      ],
+      "reported_peak_example": "Churu, West Rajasthan: 50.3 C maximum temperature reported for 2019-06-03 in the IMD bulletin",
+      "trace_status": "OFFICIAL_EVENT_TARGET_FROZEN; FORECAST_SKILL_NOT_EXECUTED",
+      "intended_protocol": "validation_protocols/HEATWAVE_VALIDATION_PROTOCOL_V1.json",
+      "claim_boundary": "The official event verifies that a real severe heat episode occurred. It does not validate TRACE heat-wave forecast skill until ensemble forecasts, climatology/reference fields, and frozen metrics are executed."
+    },
+    {
+      "event_id": "NORTH_INDIA_COLDWAVE_2019_12_28_30",
+      "hazard": "cold_wave_severe_cold_wave_cold_day",
+      "official_source": "India Meteorological Department",
+      "official_report_date": "2019-12",
+      "official_source_url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/SEVERE_WEATHER_REPORT_%28FOG%2C_COLD_WAVE_COLD_DAY%29_DURING_DECEMBER_2019.pdf",
+      "reported_regions": [
+        "Punjab",
+        "Haryana",
+        "Chandigarh & Delhi",
+        "Uttar Pradesh",
+        "Bihar"
+      ],
+      "reported_window": "Cold wave to severe cold wave conditions reported at scattered to fairly widespread places during 28-30 December 2019; widespread cold-day conditions persisted across parts of North India in the second half of December.",
+      "trace_status": "OFFICIAL_EVENT_TARGET_FROZEN; FORECAST_SKILL_NOT_EXECUTED",
+      "intended_protocol": "future lower-tail temperature protocol using the already-tested generic hazard evaluator",
+      "claim_boundary": "The official event registry is not a TRACE cold-wave validation result."
+    }
+  ],
+  "multi_hazard_skill_validated": false,
+  "next_data_requirement": "Historical ensemble temperature forecasts at 72-240 h plus ERA5/IMDAA temperature climatology/reference fields on compatible grids.",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

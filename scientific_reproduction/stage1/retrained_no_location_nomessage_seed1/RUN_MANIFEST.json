@@ -1,0 +1,53 @@
+{
+  "sample_sha256": {
+    "_tmp_no_location_seed1/HUDHUD_2014_120.npz": "8ec8146f92772d7b457972c89cfaabbf5265a8c55245fd6f232966489c7007c6",
+    "_tmp_no_location_seed1/HUDHUD_2014_72.npz": "3820975b065579a69dfe8de1ba7128d851f972191893fd836460638319c5f72b",
+    "_tmp_no_location_seed1/HUDHUD_2014_96.npz": "7da31400b0e5ab45af38a06fde94450017846bf732f2c3765052ea8421267064",
+    "_tmp_no_location_seed1/PHAILIN_2013_120.npz": "f67b2d1aec34c386bb34d9aec6444a670d4070ddabc50f97ce0efedac2d378af",
+    "_tmp_no_location_seed1/PHAILIN_2013_72.npz": "f8616d40c314ae13586fbe6ffbb07908b0173de432fdbc627f0fcdc2954f18e8",
+    "_tmp_no_location_seed1/PHAILIN_2013_96.npz": "9df11cffb9a3a590221b6e9c82d06afe658512f489190f5b92c4956c22f5ca3a",
+    "_tmp_no_location_seed1/TITLI_2018_120.npz": "0cbda183d95b725735dac4c0682c62d47f2a37c526708f769f0dadcc844e1322",
+    "_tmp_no_location_seed1/TITLI_2018_72.npz": "3845b5ad6e121b061d9fdb322b29d9176c3f39b8c355a8e71613a64e72ad6a78",
+    "_tmp_no_location_seed1/TITLI_2018_96.npz": "0a5ed77365f8abe87ebb624fea35ce4d6f57055238cb74e93b3057f14198377f",
+    "_tmp_no_location_seed1/BULBUL_2019_120.npz": "867a1691396451dbac54109ce162911d26a81db1ea560722bc26a3581c136314",
+    "_tmp_no_location_seed1/BULBUL_2019_72.npz": "503b954c9c65a90cdd10af229308bebec9b6e3a91c9ab41953f11f7cd04e62a2",
+    "_tmp_no_location_seed1/BULBUL_2019_96.npz": "142c7ebcbd126f6d598caf7347477472fb6480e4f1c14a3c12c18fc30290f6cd"
+  },
+  "timestamp_utc": "2026-10-04T10:10:58.999982+00:00",
+  "dependency_code_sha256": {
+    "trace_spherical_gnn.py": "b5ebe8e50daa896d74d99c459a247c9e9136c07872a753898ba59f8b3068de77",
+    "trace_learned_evaluation.py": "dfa4382f6f37b4d853ec0db33a940412abd71fad635674d32ae364f02b327c7c",
+    "trace_object_verify.py": "c34dd7600fcefa588b3333a1b510a8a802db0ff198ec3aeeff938552c1c61090"
+  },
+  "seed": 1,
+  "config": {
+    "dataset_manifest": "_tmp_no_location_seed1/dataset_manifest.json",
+    "epochs": 50,
+    "patience": 10,
+    "hidden": 32,
+    "blocks": 2,
+    "lr": 0.002,
+    "seed": 1,
+    "out": "retrained_no_location_nomessage_seed1",
+    "no_messages": true
+  },
+  "code_sha256": "58d3a349fc473b84211e05609d55f298c6596c7d0d2a760df197cde8b826f06a",
+  "dataset_manifest_sha256": "a01fbd91166b239bf8b3ad3a3929a96e3d44837ec109ea190df3bf7484d65217",
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "hardware": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "training_events": [
+    "HUDHUD_2014",
+    "PHAILIN_2013"
+  ],
+  "validation_events": [
+    "TITLI_2018"
+  ],
+  "test_events": [
+    "BULBUL_2019"
+  ],
+  "uncertainty": "class-weighted discriminator score; NOT calibrated probability"
+}

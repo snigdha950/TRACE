@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_BEFORE_V3_PERFORMANCE",
+  "motivation": "Measured v2 failure: residual DDPM produced severe false extremes across the original held-out Ida benchmark and frozen cross-event robustness folds.",
+  "allowed_change_reason": "measured_failure",
+  "architecture_kept": ["MeanDownscaler", "ResidualDenoiser", "32-step cosine schedule", "training-only normalization", "exact coarse projection", "16 conditional samples"],
+  "sampling_changes": {
+    "sampler": "deterministic DDIM eta=0 update using predicted epsilon and reconstructed clean residual",
+    "clean_residual_clip": "symmetric per-channel clip in normalized residual space using training-only absolute residual q99.5",
+    "clip_quantile": 0.995,
+    "test_information_used_for_clip": false
+  },
+  "training_changes": "none; same epsilon-prediction objective and validation-only checkpoint selection",
+  "evaluation": "same four frozen cross-event folds and same metrics as STAGE2_CROSS_EVENT_PROTOCOL_v1",
+  "success_gate": "v3 diffusion must avoid catastrophic false extremes and materially reduce diffusion-v2 MAE/tail/PSD errors without test-event tuning; superiority over deterministic is not assumed or required",
+  "claim_boundary": "Exploratory safety correction evaluated on previously available storms; not a new pristine independent holdout and not operational NEPS-G skill."
+}

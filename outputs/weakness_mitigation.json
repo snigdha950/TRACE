@@ -1,0 +1,61 @@
+{
+  "schema": "trace-weakness-mitigation/1.0",
+  "purpose": "One-screen response to the five main national-screening risks. v1.5 preserves the v1.4 evidence upgrades and adds fail-closed governance, mandatory human review, offline controlled stream replay, and frozen official heat/cold event targets without fabricating missing skill.",
+  "items": [
+    {
+      "weakness": "Direct NEPS-G operational validation missing",
+      "v1_5_improvement": "Added a tested provider-ingest schema validator, CLI preflight, and frozen NEPS-G validation protocol in addition to the provider-adapter map.",
+      "v1_6_improvement": "Rating-based communication polish: clearer slide claim boundaries, evidence notes, and safe-claim wording; scientific metrics unchanged.",
+      "status_after_v1_5": "INGEST_VALIDATOR_TESTED; DIRECT_SKILL_DATA_ACCESS_BLOCKED",
+      "remaining_scientific_gap": "No direct NEPS-G skill metric is bundled; GEFSv12 remains a transparent substitute.",
+      "what_closes_it": "Run the frozen Stage-1 pipeline on historical NEPS-G/NCUM events with the same no-retuning protocol."
+    },
+    {
+      "weakness": "Multi-hazard validation missing",
+      "v1_5_improvement": "Added a tested hazard-generic upper/lower-tail footprint evaluator plus a frozen heat-wave validation protocol; real second-hazard skill remains unexecuted.",
+      "status_after_v1_5": "CYCLONE_WIND_VALIDATED; GENERIC_HEAT_COLD_EVALUATOR_TESTED; REAL_SECOND_HAZARD_NOT_VALIDATED",
+      "remaining_scientific_gap": "No held-out heat-dome, cold-wave, hail or frost skill metric is bundled.",
+      "what_closes_it": "Add at least one held-out heat/cold event with ERA5/IMDAA climatology and official impact labels."
+    },
+    {
+      "weakness": "Same-event Stage-1 to Stage-2 India validation missing",
+      "v1_5_improvement": "Added /api/v1/integration/audit to expose the exact handoff contract, route decision and same-event validation boundary.",
+      "status_after_v1_5": "INTEGRATED_SOFTWARE_CONTRACT_VERIFIED; SAME_EVENT_MET_SKILL_NOT_CLAIMED",
+      "remaining_scientific_gap": "Stage-2 HRRR reconstruction is controlled evidence, not BULBUL/India same-event downscaling skill.",
+      "what_closes_it": "Pair an Indian high-resolution reference field with a same-event coarse forecast slice and rerun 12->5 km validation."
+    },
+    {
+      "weakness": "GNN message-passing advantage is inconclusive",
+      "v1_5_improvement": "Added a cross-event architecture evidence gate using frozen FANI and BULBUL aggregates; it explicitly retains message passing as experimental rather than pretending it is a proven default.",
+      "status_after_v1_5": "FROZEN_CROSS_EVENT_ARCHITECTURE_GATE_AVAILABLE",
+      "remaining_scientific_gap": "Full graph message passing still does not have a stable independent advantage over no-message nonlinear ablation.",
+      "what_closes_it": "More diverse held-out events and ablations showing when neighbor exchange improves contiguous footprints or reduces false objects."
+    },
+    {
+      "weakness": "Screening judges may miss the value quickly",
+      "v1_5_improvement": "Added a 30-second screening brief and surfaced recovered sequential FANI tracking evidence in the API/dashboard so judges see measured wins and boundaries immediately.",
+      "status_after_v1_5": "SCREENING_BRIEF_PLUS_EXECUTED_TRACKING_EVIDENCE",
+      "remaining_scientific_gap": "Better communication cannot replace missing NEPS-G/multi-hazard evidence.",
+      "what_closes_it": "Add the missing scientific evaluations, then update the one-screen evidence map."
+    }
+  ],
+  "score_effect_boundary": "FANI temporal tracking is executed evidence. Provider/hazard utilities are tested software. Direct NEPS-G, real second-hazard, and same-event India Stage-2 skill still require new data runs.",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

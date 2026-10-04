@@ -1,0 +1,167 @@
+{
+  "schema": "trace-track-object/1.0",
+  "event_id": "SOFTWARE_TRACK_DEMO",
+  "frames": [
+    {
+      "valid_time": "2026-01-01T00:00:00+00:00",
+      "forecast_lead_hours": 120,
+      "anomaly_core_coordinate": {
+        "lat": 16.2,
+        "lon": 87.7
+      },
+      "temporal_bbox": {
+        "west": 87.5,
+        "south": 16.0,
+        "east": 88.0,
+        "north": 16.5
+      },
+      "macro_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              87.5,
+              16.0
+            ],
+            [
+              88.0,
+              16.0
+            ],
+            [
+              88.0,
+              16.5
+            ],
+            [
+              87.5,
+              16.5
+            ],
+            [
+              87.5,
+              16.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "valid_time": "2026-01-01T06:00:00+00:00",
+      "forecast_lead_hours": 114,
+      "anomaly_core_coordinate": {
+        "lat": 16.7,
+        "lon": 88.1
+      },
+      "temporal_bbox": {
+        "west": 87.5,
+        "south": 16.0,
+        "east": 88.0,
+        "north": 16.5
+      },
+      "macro_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              87.5,
+              16.0
+            ],
+            [
+              88.0,
+              16.0
+            ],
+            [
+              88.0,
+              16.5
+            ],
+            [
+              87.5,
+              16.5
+            ],
+            [
+              87.5,
+              16.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "valid_time": "2026-01-01T12:00:00+00:00",
+      "forecast_lead_hours": 108,
+      "anomaly_core_coordinate": {
+        "lat": 17.1,
+        "lon": 88.6
+      },
+      "temporal_bbox": {
+        "west": 87.5,
+        "south": 16.0,
+        "east": 88.0,
+        "north": 16.5
+      },
+      "macro_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              87.5,
+              16.0
+            ],
+            [
+              88.0,
+              16.0
+            ],
+            [
+              88.0,
+              16.5
+            ],
+            [
+              87.5,
+              16.5
+            ],
+            [
+              87.5,
+              16.0
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "core_trajectory_geojson": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        87.7,
+        16.2
+      ],
+      [
+        88.1,
+        16.7
+      ],
+      [
+        88.6,
+        17.1
+      ]
+    ]
+  },
+  "software_tracking_capability": true,
+  "scientific_validation": false,
+  "boundary": "This endpoint constructs a time-ordered track object from caller/model frames. The bundled frozen BULBUL alert set does not itself validate a physical trajectory because its three snapshots share one valid time. Separate recovered FANI evidence does contain sequential valid-time wind-footprint tracking, but not validated cyclone-center reconstruction.",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

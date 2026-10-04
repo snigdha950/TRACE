@@ -1,0 +1,37 @@
+{
+  "schema": "trace-stage1-stage2-integration-audit/1.0",
+  "stage1_to_stage2_contract": "READY_SOFTWARE_HANDOFF",
+  "contract_fields": [
+    "event_id",
+    "valid_time",
+    "lead_hours",
+    "anomaly_core_coordinate",
+    "crop_bbox",
+    "requested_input_grid_km",
+    "requested_output_grid_km",
+    "preferred_route",
+    "diffusion_route"
+  ],
+  "current_route_decision": "deterministic_mean_plus_exact_coarse_projection",
+  "stage2_evidence_type": "controlled HRRR 12->5 km reconstruction benchmark",
+  "same_event_india_validation": false,
+  "safe_interpretation": "Software composability is verified; same-event meteorological downscaling skill is future validation.",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "schema": "trace-fani-temporal-evidence/1.0",
+  "status": "EXECUTED_REAL_TEMPORAL_EVALUATION",
+  "event_id": "FANI_2019",
+  "initialization_utc": "2019-04-29T00:00:00Z",
+  "lead_hours": [
+    72,
+    78,
+    84,
+    90,
+    96,
+    102,
+    108,
+    114,
+    120
+  ],
+  "time_steps": 9,
+  "members": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "forecast_threshold_ms": 17.5,
+  "minimum_object_area_km2": 5000,
+  "method_summaries": {
+    "member_0": {
+      "objects": 10,
+      "links": 8,
+      "algorithmic_segment_count": 2,
+      "selected_segment_id": "member_0-t0-o2",
+      "selected_timesteps": 9,
+      "missed_timesteps": [],
+      "coverage_fraction": 1.0,
+      "continuity_edges_over_window": 1.0,
+      "splits": 0,
+      "merges": 0,
+      "flicker_policy": "No gap bridging",
+      "meteorological_split_merge_accuracy": "NOT ASSESSED",
+      "mean_centroid_error_km": 460.1769813140962,
+      "median_centroid_error_km": 481.42259196337636,
+      "max_centroid_error_km": 731.9556047090795,
+      "closest_puri_approach_proxy": {
+        "valid_time": "2019-05-04T00:00:00+00:00",
+        "distance_km": 305.30237452544156,
+        "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+      }
+    },
+    "member_1": {
+      "objects": 10,
+      "links": 8,
+      "algorithmic_segment_count": 2,
+      "selected_segment_id": "member_1-t0-o2",
+      "selected_timesteps": 9,
+      "missed_timesteps": [],
+      "coverage_fraction": 1.0,
+      "continuity_edges_over_window": 1.0,
+      "splits": 0,
+      "merges": 0,
+      "flicker_policy": "No gap bridging",
+      "meteorological_split_merge_accuracy": "NOT ASSESSED",
+      "mean_centroid_error_km": 329.1305813265569,
+      "median_centroid_error_km": 288.63223645296785,
+      "max_centroid_error_km": 650.0983834005481,
+      "closest_puri_approach_proxy": {
+        "valid_time": "2019-05-04T00:00:00+00:00",
+        "distance_km": 196.60789718657853,
+        "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+      }
+    },
+    "member_2": {
+      "objects": 9,
+      "links": 8,
+      "algorithmic_segment_count": 5,
+      "selected_segment_id": "member_2-t3-o1",
+      "selected_timesteps": 4,
+      "missed_timesteps": [
+        0,
+        1,
+        2,
+        7,
+        8
+      ],
+      "coverage_fraction": 0.4444444444444444,
+      "continuity_edges_over_window": 0.375,
+      "splits": 2,
+      "merges": 0,
+      "flicker_policy": "No gap bridging",
+      "meteorological_split_merge_accuracy": "NOT ASSESSED",
+      "mean_centroid_error_km": 464.4581954830763,
+      "median_centroid_error_km": 464.4251071210932,
+      "max_centroid_error_km": 519.5156167254754,
+      "closest_puri_approach_proxy": {
+        "valid_time": "2019-05-03T00:00:00+00:00",
+        "distance_km": 449.981622766498,
+        "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+      }
+    },
+    "member_3": {
+      "objects": 12,
+      "links": 11,
+      "algorithmic_segment_count": 6,
+      "selected_segment_id": "member_3-t4-o1",
+      "selected_timesteps": 5,
+      "missed_timesteps": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "coverage_fraction": 0.5555555555555556,
+      "continuity_edges_over_window": 0.5,
+      "splits": 1,
+      "merges": 2,
+      "flicker_policy": "No gap bridging",
+      "meteorological_split_merge_accuracy": "NOT ASSESSED",
+      "mean_centroid_error_km": 676.2063336374002,
+      "median_centroid_error_km": 668.6872254211866,
+      "max_centroid_error_km": 750.4264353540296,
+      "closest_puri_approach_proxy": {
+        "valid_time": "2019-05-04T00:00:00+00:00",
+        "distance_km": 366.25528235338106,
+        "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+      }
+    },
+    "member_4": {
+      "objects": 9,
+      "links": 9,
+      "algorithmic_segment_count": 4,
+      "selected_segment_id": "member_4-t1-o1",
+      "selected_timesteps": 4,
+      "missed_timesteps": [
+        0,
+        5,
+        6,
+        7,
+        8
+      ],
+      "coverage_fraction": 0.4444444444444444,
+      "continuity_edges_over_window": 0.375,
+      "splits": 1,
+      "merges": 1,
+      "flicker_policy": "No gap bridging",
+      "meteorological_split_merge_accuracy": "NOT ASSESSED",
+      "mean_centroid_error_km": 536.3688020402537,
+      "median_centroid_error_km": 542.7560277862402,
+      "max_centroid_error_km": 584.1519362763627,
+      "closest_puri_approach_proxy": {
+        "valid_time": "2019-05-02T12:00:00+00:00",
+        "distance_km": 592.237786878871,
+        "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+      }
+    },
+    "ensemble_mean": {
+      "objects": 1,
+      "links": 0,
+      "algorithmic_segment_count": 1,
+      "selected_segment_id": "ensemble_mean-t5-o1",
+      "selected_timesteps": 1,
+      "missed_timesteps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "coverage_fraction": 0.1111111111111111,
+      "continuity_edges_over_window": 0.0,
+      "splits": 0,
+      "merges": 0,
+      "flicker_policy": "No gap bridging",
+      "meteorological_split_merge_accuracy": "NOT ASSESSED",
+      "mean_centroid_error_km": 579.9451351067534,
+      "median_centroid_error_km": 579.9451351067534,
+      "max_centroid_error_km": 579.9451351067534,
+      "closest_puri_approach_proxy": {
+        "valid_time": "2019-05-03T06:00:00+00:00",
+        "distance_km": 530.4438277770566,
+        "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+      }
+    }
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": {
+      "63_method_time_rows": true,
+      "each_method_all_nine_leads": true,
+      "all_9_imd_intensities": true,
+      "five_members_including_control": true,
+      "frozen_contract_hash_matches": true,
+      "checkpoint01_96h_consistency_ensemble_mean": true,
+      "checkpoint01_96h_consistency_member_support_0p4": true
+    },
+    "scope": "Temporal evidence completeness and cross-checkpoint consistency; NOT strong forecasting skill"
+  },
+  "interpretation": "Wind-object centroid proxy trajectory, not validated cyclone center reconstruction. IMD independent; analytical split/merge correctness unverified. All no-detection times retained.",
+  "scientific_evidence": {
+    "sequential_valid_time_wind_footprint_tracking_executed": true,
+    "wind_footprint_centroid_trajectory_evaluated": true,
+    "cyclone_center_reconstruction_validated": false,
+    "landfall_timing_validated": false,
+    "split_merge_meteorological_accuracy_validated": false
+  },
+  "historic_provenance_references": {
+    "config_sha256": "a0d9d82ceb318b8f8d8f1fa97dee3796c7ce70cbb63b8e063502ac2b90effc88",
+    "contract_sha256": "8833d1aee379f21259e26bf61df02aba09305638c7deaebfd0df508e2041b7eb",
+    "historic_input_hashes": {
+      "data/decoded_track/forecast_2019042900.npz": "b2a07a3fdac26920d75f26f99584ac78a51a9541cf6f602e5f3304b10e64c5e1",
+      "data/era5_track/reference_fani_track.nc": "d2d53c70bd5db26e84dfc06a8b87415f703f9590218f4d9a106c4f52d8208d3a",
+      "imd_fani_best_track_20190502_20190504.csv": "64570d0004aa22e257fa79294fddf76657ea7c5f3fcd503244ac8994a006b0a7"
+    },
+    "historic_code_hashes": {
+      "/workspace/scratch/20ef86c2ee7f/trace_v7_work/evaluate_fani_track.py": "760777af8911b208770ac2e347b638a41aba0a73b35909d589813c4d2a3a0797",
+      "../trace_v32_probe/baseline.py": "a6a962fa6dcb65093577d7d3f4f3a1f4e3e5c55ab05ce14fed10cf124d179dbc"
+    },
+    "note": "Historic raw-input/code hashes are preserved from the executed state record; v1.4 verifies the bundled evidence records themselves, not those external historic raw files."
+  },
+  "bundled_record_sha256": {
+    "TEMPORAL_FANI_RESULTS.md": "8896f0da3ec5c476219e016d9b3d54e3a65f11a0c69934b65e1f4cb7f6dede07",
+    "TRACE_CURRENT_STATE_FANI.json": "7e89eaedd70f47726ef1df4730f3eb7475de67f8c2794701788f1f264d81f814"
+  },
+  "limitations": [
+    "Centroids are gale/wind-footprint proxies, not exact cyclone centers.",
+    "Centroid errors are large and member coverage is uneven.",
+    "A 300 km object matching gate can count a hit even when footprint IoU is zero.",
+    "Closest approach to Puri is a proxy, not a validated landfall-time estimate.",
+    "This evidence is GEFSv12-based, not direct NEPS-G validation."
+  ],
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false
+}

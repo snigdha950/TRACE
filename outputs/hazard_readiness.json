@@ -1,0 +1,66 @@
+{
+  "schema": "trace-hazard-readiness/1.0",
+  "validated_now": [
+    {
+      "hazard": "severe_cyclone_or_extreme_wind",
+      "status": "HELD_OUT_EVIDENCE_AVAILABLE",
+      "evidence": "FANI/BULBUL wind-focused Stage-1 evaluation + January negative control"
+    }
+  ],
+  "tested_generic_evaluator": {
+    "module": "hazard_footprint.py",
+    "capability": "upper/lower-tail ensemble-support footprint scoring with IoU/precision/recall",
+    "unit_tested": true,
+    "scientific_skill_validation": false
+  },
+  "software_ready_not_validated": [
+    {
+      "hazard": "heat_dome",
+      "required_variables": [
+        "2m_temperature",
+        "geopotential_or_height",
+        "climatological_percentile"
+      ],
+      "validation_status": "NOT_EXECUTED_IN_BUNDLE",
+      "frozen_protocol": "validation_protocols/HEATWAVE_VALIDATION_PROTOCOL_V1.json"
+    },
+    {
+      "hazard": "cold_wave_or_frost",
+      "required_variables": [
+        "2m_temperature",
+        "minimum_temperature",
+        "surface_or_crop-zone mask",
+        "climatological_percentile"
+      ],
+      "validation_status": "NOT_EXECUTED_IN_BUNDLE"
+    },
+    {
+      "hazard": "hail_or_severe_convective_risk",
+      "required_variables": [
+        "instability proxy",
+        "wind shear proxy",
+        "precipitation/reflectivity proxy"
+      ],
+      "validation_status": "NOT_EXECUTED_IN_BUNDLE"
+    }
+  ],
+  "boundary": "This is a typed expansion plan and judge-facing readiness map; it is not a claim of multi-hazard skill.",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

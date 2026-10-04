@@ -1,0 +1,37 @@
+{
+  "frozen_before_learned_results": true,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "models": [
+    "linear_same_features",
+    "no_message_gnn",
+    "spherical_gnn"
+  ],
+  "epochs": 50,
+  "patience": 10,
+  "hidden": 32,
+  "blocks": 2,
+  "learning_rate": 0.002,
+  "mask_threshold": 0.5,
+  "minimum_area_km2": 5000,
+  "selection": "Titli validation BCE only",
+  "target": "independent ERA5 climate99 anomaly, fixed17p5 secondary",
+  "parent_config_sha256": "c03d2371559c1078a7b1d3a93a17acd122b01b8f90d1656a533d342fb7a013eb",
+  "primary_metrics": [
+    "area_weighted_iou",
+    "average_precision_threshold_free"
+  ],
+  "secondary_metrics": [
+    "object_precision",
+    "object_recall",
+    "minimum_object_to_reference_centroid_distance_km",
+    "predicted_area_km2"
+  ],
+  "uncertainty": "mean +/- sample SD across seeds; FANI n=1 independent cyclone; nodes and correlated leads not independent events",
+  "mesh_config_v2_sha256": "1f6ce5cb8f704ad26b444ebf8162fdcd4ef0632ee78b5fd5c42f914168dd77ef"
+}

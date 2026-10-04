@@ -1,0 +1,19 @@
+{
+  "schema": "trace-generic-hazard-footprint-evaluation/1.0",
+  "polarity": "upper",
+  "members": 3,
+  "support_threshold": 0.4,
+  "metrics": {
+    "iou": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_positive_cells": 3,
+    "false_positive_cells": 0,
+    "false_negative_cells": 0,
+    "predicted_extreme_cells": 3,
+    "reference_extreme_cells": 3,
+    "mean_support_over_predicted_cells": 0.8888888888888888
+  },
+  "scientific_skill_validation": false,
+  "boundary": "This is a hazard-generic evaluation primitive. Scientific multi-hazard skill requires a frozen real-data event protocol and held-out results."
+}

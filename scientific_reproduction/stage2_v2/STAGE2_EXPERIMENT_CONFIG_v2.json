@@ -1,0 +1,280 @@
+{
+  "seed": 42,
+  "frozen_before_new_performance": true,
+  "source": "NOAA HRRR CONUS f00 3km native Lambert grid",
+  "extent_km": 240,
+  "samples": [
+    {
+      "date": "20200825",
+      "hour": "12",
+      "event_id": "LAURA_2020",
+      "split": "train",
+      "center_lat": 23.4,
+      "center_lon": -86.2,
+      "besttrack_storm_id": "AL132020",
+      "besttrack_valid_time": "20200825T1200Z"
+    },
+    {
+      "date": "20200825",
+      "hour": "18",
+      "event_id": "LAURA_2020",
+      "split": "train",
+      "center_lat": 24.1,
+      "center_lon": -87.5,
+      "besttrack_storm_id": "AL132020",
+      "besttrack_valid_time": "20200825T1800Z"
+    },
+    {
+      "date": "20200826",
+      "hour": "12",
+      "event_id": "LAURA_2020",
+      "split": "train",
+      "center_lat": 26.4,
+      "center_lon": -91.4,
+      "besttrack_storm_id": "AL132020",
+      "besttrack_valid_time": "20200826T1200Z"
+    },
+    {
+      "date": "20200826",
+      "hour": "18",
+      "event_id": "LAURA_2020",
+      "split": "train",
+      "center_lat": 27.3,
+      "center_lon": -92.5,
+      "besttrack_storm_id": "AL132020",
+      "besttrack_valid_time": "20200826T1800Z"
+    },
+    {
+      "date": "20200827",
+      "hour": "12",
+      "event_id": "LAURA_2020",
+      "split": "train",
+      "center_lat": 31.2,
+      "center_lon": -93.3,
+      "besttrack_storm_id": "AL132020",
+      "besttrack_valid_time": "20200827T1200Z"
+    },
+    {
+      "date": "20200827",
+      "hour": "18",
+      "event_id": "LAURA_2020",
+      "split": "train",
+      "center_lat": 32.8,
+      "center_lon": -92.9,
+      "besttrack_storm_id": "AL132020",
+      "besttrack_valid_time": "20200827T1800Z"
+    },
+    {
+      "date": "20201008",
+      "hour": "12",
+      "event_id": "DELTA_2020",
+      "split": "train",
+      "center_lat": 23.7,
+      "center_lon": -92.4,
+      "besttrack_storm_id": "AL262020",
+      "besttrack_valid_time": "20201008T1200Z"
+    },
+    {
+      "date": "20201008",
+      "hour": "18",
+      "event_id": "DELTA_2020",
+      "split": "train",
+      "center_lat": 24.5,
+      "center_lon": -93.1,
+      "besttrack_storm_id": "AL262020",
+      "besttrack_valid_time": "20201008T1800Z"
+    },
+    {
+      "date": "20201009",
+      "hour": "12",
+      "event_id": "DELTA_2020",
+      "split": "train",
+      "center_lat": 27.5,
+      "center_lon": -93.8,
+      "besttrack_storm_id": "AL262020",
+      "besttrack_valid_time": "20201009T1200Z"
+    },
+    {
+      "date": "20201009",
+      "hour": "18",
+      "event_id": "DELTA_2020",
+      "split": "train",
+      "center_lat": 28.7,
+      "center_lon": -93.6,
+      "besttrack_storm_id": "AL262020",
+      "besttrack_valid_time": "20201009T1800Z"
+    },
+    {
+      "date": "20201010",
+      "hour": "12",
+      "event_id": "DELTA_2020",
+      "split": "train",
+      "center_lat": 32.5,
+      "center_lon": -91.4,
+      "besttrack_storm_id": "AL262020",
+      "besttrack_valid_time": "20201010T1200Z"
+    },
+    {
+      "date": "20201010",
+      "hour": "18",
+      "event_id": "DELTA_2020",
+      "split": "train",
+      "center_lat": 33.3,
+      "center_lon": -90.6,
+      "besttrack_storm_id": "AL262020",
+      "besttrack_valid_time": "20201010T1800Z"
+    },
+    {
+      "date": "20200915",
+      "hour": "12",
+      "event_id": "SALLY_2020",
+      "split": "validation",
+      "center_lat": 29.0,
+      "center_lon": -88.1,
+      "besttrack_storm_id": "AL192020",
+      "besttrack_valid_time": "20200915T1200Z"
+    },
+    {
+      "date": "20200915",
+      "hour": "18",
+      "event_id": "SALLY_2020",
+      "split": "validation",
+      "center_lat": 29.3,
+      "center_lon": -88.1,
+      "besttrack_storm_id": "AL192020",
+      "besttrack_valid_time": "20200915T1800Z"
+    },
+    {
+      "date": "20200916",
+      "hour": "12",
+      "event_id": "SALLY_2020",
+      "split": "validation",
+      "center_lat": 30.5,
+      "center_lon": -87.6,
+      "besttrack_storm_id": "AL192020",
+      "besttrack_valid_time": "20200916T1200Z"
+    },
+    {
+      "date": "20200916",
+      "hour": "18",
+      "event_id": "SALLY_2020",
+      "split": "validation",
+      "center_lat": 31.1,
+      "center_lon": -87.2,
+      "besttrack_storm_id": "AL192020",
+      "besttrack_valid_time": "20200916T1800Z"
+    },
+    {
+      "date": "20210828",
+      "hour": "12",
+      "event_id": "IDA_2021",
+      "split": "test",
+      "center_lat": 24.4,
+      "center_lon": -85.7,
+      "besttrack_storm_id": "AL092021",
+      "besttrack_valid_time": "20210828T1200Z"
+    },
+    {
+      "date": "20210828",
+      "hour": "18",
+      "event_id": "IDA_2021",
+      "split": "test",
+      "center_lat": 25.6,
+      "center_lon": -86.6,
+      "besttrack_storm_id": "AL092021",
+      "besttrack_valid_time": "20210828T1800Z"
+    },
+    {
+      "date": "20210829",
+      "hour": "12",
+      "event_id": "IDA_2021",
+      "split": "test",
+      "center_lat": 28.5,
+      "center_lon": -89.6,
+      "besttrack_storm_id": "AL092021",
+      "besttrack_valid_time": "20210829T1200Z"
+    },
+    {
+      "date": "20210829",
+      "hour": "18",
+      "event_id": "IDA_2021",
+      "split": "test",
+      "center_lat": 29.2,
+      "center_lon": -90.4,
+      "besttrack_storm_id": "AL092021",
+      "besttrack_valid_time": "20210829T1800Z"
+    },
+    {
+      "date": "20210830",
+      "hour": "12",
+      "event_id": "IDA_2021",
+      "split": "test",
+      "center_lat": 31.5,
+      "center_lon": -90.9,
+      "besttrack_storm_id": "AL092021",
+      "besttrack_valid_time": "20210830T1200Z"
+    },
+    {
+      "date": "20210830",
+      "hour": "18",
+      "event_id": "IDA_2021",
+      "split": "test",
+      "center_lat": 32.2,
+      "center_lon": -90.5,
+      "besttrack_storm_id": "AL092021",
+      "besttrack_valid_time": "20210830T1800Z"
+    }
+  ],
+  "source_shape": [
+    2,
+    80,
+    80
+  ],
+  "fine_shape": [
+    2,
+    48,
+    48
+  ],
+  "coarse_shape": [
+    2,
+    20,
+    20
+  ],
+  "remapping": "exact separable cell-area overlap",
+  "mean_epochs": 80,
+  "diffusion_epochs": 100,
+  "patience": 15,
+  "learning_rate": 0.002,
+  "diffusion_steps": 32,
+  "diffusion_beta_schedule": "cosine with terminal alpha_bar near zero; fixes supplied 12-step Gaussian-prior mismatch",
+  "diffusion_samples_per_parent": 16,
+  "primary_threshold": "training 5km reference speed pooled q99; never test-derived",
+  "primary_metrics": [
+    "speed_MAE",
+    "speed_RMSE",
+    "peak_bias",
+    "q95_bias",
+    "q99_bias",
+    "threshold_IoU",
+    "PSD_log10_MAE",
+    "coarse_UV_MAE",
+    "divergence_RMSE",
+    "vorticity_RMSE"
+  ],
+  "q999": "descriptive only; ~2.3 cells per frame in upper0.1percent, insufficient independent tail support",
+  "physics_ablation": "exact coarse-aggregation affine projection ON/OFF, not fluid PDE or conservation of wind speed",
+  "hypothesis": "residual diffusion improves held-out tail and unresolved-scale PSD relative to deterministic and interpolation without excessive false extremes",
+  "version": 2,
+  "supersedes_config_sha256": "e30e2a15a65e79df9a0a29c9bb384dd547e0d42f2b6dae36787440b58de11405",
+  "crop_policy": "time-specific official NHC HURDAT2 best-track center; nearest HRRR point <=5km; centered80x80 patch must fit entirely; no shifting of out-of-domain crops; geographic exclusions recorded before model performance",
+  "besttrack": {
+    "provider": "NOAA National Hurricane Center",
+    "source_url": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-02272026.txt",
+    "source_path": "besttrack_sources/hurdat2_atlantic.txt",
+    "source_sha256": "1b9b0c7beed5b4505838658b1d30e159fc84330c60891a58cfcf43ae55c37202",
+    "selected_positions": "besttrack_sources/SELECTED_STORM_POSITIONS.json"
+  },
+  "test_independent_event_count": 1,
+  "hero_sample_predeclared": "2021082912",
+  "diagnostic_far_extreme_tolerance_cells": 2
+}

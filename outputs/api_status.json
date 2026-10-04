@@ -1,0 +1,63 @@
+{
+  "implemented": [
+    "frozen Stage-1 alert ingestion",
+    "geographic macro footprint",
+    "5 km UI locator ring (not a hazard radius)",
+    "LOW/MODERATE/SEVERE prototype severity",
+    "Stage1->refinement request contract",
+    "Stage-2 evidence-gated route summary",
+    "strict generic alert evaluation schemas",
+    "verifiable frozen-evidence provenance hashes",
+    "generic temporal track-object builder for new caller/model frames",
+    "recovered executed FANI sequential wind-footprint tracking evidence (+72 to +120 h)",
+    "provider-adapter readiness map plus tested NEPS-G-compatible ingest metadata validator",
+    "hazard-readiness matrix plus tested hazard-generic upper/lower-tail footprint evaluator",
+    "model-selection defence that avoids overstating graph-message superiority",
+    "Stage1->Stage2 integration audit with same-event boundary",
+    "fail-closed operational-safety policy with mandatory human review",
+    "offline controlled stream replay for saved prototype alerts",
+    "official IMD heat/cold event-target registry for future no-test-tuning validation"
+  ],
+  "severity_rule": "TRACE_SEVERITY_RULE_V1_NOT_CALIBRATED",
+  "severity_rule_provenance": "Transparent prototype rule over frozen TRACE evidence. The 0.6 seed-consensus gate comes from the frozen alert footprint consensus. The 0.8 severe-tier seed agreement is a documented alert-layer category threshold, not a calibrated probability or official warning policy.",
+  "thresholds": {
+    "fixed_wind_sensitivity_ms": 12.5,
+    "fixed_wind_primary_ms": 17.5,
+    "efi_sensitivity": 0.5,
+    "efi_primary": 0.8,
+    "member_support_threshold": 0.4,
+    "seed_consensus_threshold": 0.6,
+    "prototype_severe_seed_agreement_threshold": 0.8
+  },
+  "boundaries": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ],
+  "schema": "trace-api-metadata/1.5",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

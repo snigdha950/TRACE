@@ -1,0 +1,80 @@
+### Health
+GET http://localhost:8000/health
+
+### Readiness gated by frozen evidence integrity
+GET http://localhost:8000/ready
+
+### Frozen provenance verification
+GET http://localhost:8000/api/v1/provenance
+
+### Same-valid-time forecast-lead sensitivity (NOT a physical trajectory)
+GET http://localhost:8000/api/v1/lead-evolution
+
+### Frozen alert
+GET http://localhost:8000/api/v1/alerts/96
+
+### GeoJSON
+GET http://localhost:8000/api/v1/geojson
+
+### Stage-2 request
+GET http://localhost:8000/api/v1/refinement-request/96
+
+### Generic severity
+POST http://localhost:8000/api/v1/severity
+Content-Type: application/json
+
+{
+  "max_ensemble_mean_wind_ms": 18.0,
+  "max_efi": 0.85,
+  "max_member_support_fraction": 0.4,
+  "mean_seed_agreement": 0.9,
+  "max_sot": 2.0
+}
+
+### Generic alert evaluation
+POST http://localhost:8000/api/v1/alerts/evaluate
+Content-Type: application/json
+
+{
+  "event_id": "DEMO_EVENT",
+  "valid_time": "2026-01-01T00:00:00Z",
+  "forecast_lead_hours": 72,
+  "core_lat": 18.0,
+  "core_lon": 88.0,
+  "macro_footprint_area_km2": 20000,
+  "macro_footprint_geojson": {
+    "type": "Polygon",
+    "coordinates": [[[87.8,17.8],[88.2,17.8],[88.2,18.2],[87.8,18.2],[87.8,17.8]]]
+  },
+  "evidence": {
+    "max_ensemble_mean_wind_ms": 18.0,
+    "max_efi": 0.85,
+    "max_member_support_fraction": 0.4,
+    "mean_seed_agreement": 0.9,
+    "max_sot": 2.0
+  }
+}
+
+### Software-only temporal track-object construction
+POST http://localhost:8000/api/v1/tracks/build
+Content-Type: application/json
+
+{
+  "event_id": "SOFTWARE_TRACK_DEMO",
+  "frames": [
+    {
+      "valid_time": "2026-01-01T00:00:00Z",
+      "forecast_lead_hours": 120,
+      "core_lat": 16.0,
+      "core_lon": 87.0,
+      "macro_footprint_geojson": {"type":"Polygon","coordinates":[[[86.8,15.8],[87.2,15.8],[87.2,16.2],[86.8,16.2],[86.8,15.8]]]}
+    },
+    {
+      "valid_time": "2026-01-01T06:00:00Z",
+      "forecast_lead_hours": 114,
+      "core_lat": 16.5,
+      "core_lon": 87.5,
+      "macro_footprint_geojson": {"type":"Polygon","coordinates":[[[87.3,16.3],[87.7,16.3],[87.7,16.7],[87.3,16.7],[87.3,16.3]]]}
+    }
+  ]
+}

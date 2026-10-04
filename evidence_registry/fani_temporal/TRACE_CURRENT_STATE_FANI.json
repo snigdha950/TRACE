@@ -1,0 +1,952 @@
+{
+  "authoritative_current_snapshot": {
+    "authoritative": true,
+    "work_directory": "trace_v8_work",
+    "stage1_wind_only": "PRIMARY_FIVE_SEED_COMPLETE",
+    "validated_runs": 15,
+    "expected_runs": 15,
+    "stage1_results": "trace_v8_work/stage1_seed_summary/STAGE1_FIVE_SEED_RESULTS.json",
+    "stage1_csv": "trace_v8_work/stage1_seed_summary/STAGE1_SEED_SUMMARY.csv",
+    "stage2": "EXECUTED_VALIDATED; results preserved, no rerun",
+    "stage2_results": "trace_v8_work/stage2_run_v2/stage2_metrics.json",
+    "FANI_and_January_controls": "COMPLETED_PRESERVED_NO_RERUN",
+    "wind_only_ablation_result": "Preserved: no stable full-GNN advantage over no-message",
+    "BULBUL": "NOT_EVALUATED",
+    "multivariable": "12 samples built/validated; zero target erasure; models not trained; BULBUL skill UNOPENED",
+    "older_smoke_fields": "Historical only; this snapshot and v8_execution supersede old smoke metadata",
+    "Bulbul": "Data acquisition PASS; reference and1989\u20132018 climate loaded; test inference UNOPENED"
+  },
+  "schema": "trace-continuous-handoff/1",
+  "snapshot_utc": "2026-10-03T07:25:17.050130+00:00",
+  "project": "TRACE",
+  "canonical_state_notice": "This file supersedes historical trace_v32_probe/current_state.json, which intentionally describes the pre-download state.",
+  "latest_milestone": "RUN2_MULTIVARIABLE_DATA_VALIDATION_PASS",
+  "pause_before_new_scientific_experiment": false,
+  "status": {
+    "ingestion": "IMPLEMENTED, EXECUTED, VALIDATED",
+    "baseline": "IMPLEMENTED, EXECUTED",
+    "smoke_diagnostics": "MEASURED",
+    "implementation_checks": "17 PASSED at export verification",
+    "independent_forecast_evaluation": "EXECUTED",
+    "historical_extreme_case": "FANI 2019 frozen v7; see checkpoint01 validation",
+    "portable_execute_wrapper": "IMPLEMENTED; wrapper invocation not yet executed",
+    "diffusion": "UNTESTED",
+    "export": "LOCAL_ARTIFACTS_CREATED; persistent-upload receipt is external to the immutable archive"
+  },
+  "project_directory": "trace_v32_probe",
+  "recorded_run": "trace_v32_probe/outputs/20261002T051658_187908Z",
+  "data": {
+    "original_ps_provider": "NCMRWF NEPS-G 12 km",
+    "previous_probe_provider": "ECMWF IFS open data 0.25 degree",
+    "actual_provider": "NOAA GEFS 0.5-degree perturbed ensemble, atmospheric primary fields",
+    "access_route": "NOAA NOMADS official server-side GRIB subset",
+    "documentation": "https://www.nco.ncep.noaa.gov/pmb/products/gens/",
+    "initialization": "2026-10-01T00:00:00+00:00",
+    "valid_times": [
+      "2026-10-04T00:00:00+00:00",
+      "2026-10-04T06:00:00+00:00",
+      "2026-10-04T12:00:00+00:00"
+    ],
+    "members": [
+      1,
+      2,
+      3
+    ],
+    "lead_hours": [
+      72,
+      78,
+      84
+    ],
+    "shape": [
+      3,
+      3,
+      61,
+      71
+    ],
+    "dimensions": [
+      "member",
+      "lead_time",
+      "latitude",
+      "longitude"
+    ],
+    "grid_degrees": [
+      0.5,
+      0.5
+    ],
+    "region": {
+      "south": 5.0,
+      "north": 35.0,
+      "west": 65.0,
+      "east": 100.0
+    },
+    "variables": {
+      "u10": "m s-1",
+      "v10": "m s-1",
+      "wind_speed": "m s-1",
+      "cell_area_km2": "km2"
+    },
+    "raw_grib_bytes": 111025,
+    "raw_grib_sha256": "fa8730fdd4dbbca322f0ab16faa58c35c3ef89a4a9ea37f17a758d93c42aafc1",
+    "missing_values": 0,
+    "control": "excluded",
+    "full_ensemble": false,
+    "reference_loaded": false
+  },
+  "configuration": {
+    "wind_threshold_m_s": 10.0,
+    "threshold_label": "functional wind-exceedance tracking; not a severe-weather warning",
+    "separate_high_wind_screen_m_s": 20.0,
+    "minimum_object_area_km2": 5000.0,
+    "connectivity": 8,
+    "expected_step_hours": 6,
+    "overlap_fraction_threshold": 0.1,
+    "centroid_gate_km": 150.0,
+    "seed": 42
+  },
+  "measured_functional_results": {
+    "evidence_class": "real forecast execution and internal diagnostics; no observed-weather verification",
+    "object_count": 15,
+    "edge_count": 5,
+    "track_segment_count": 14,
+    "objects_by_member": {
+      "1": 4,
+      "2": 5,
+      "3": 6
+    },
+    "lifecycle": {
+      "birth": 9,
+      "death": 4,
+      "continuation": 1,
+      "split": 2,
+      "merge": 0,
+      "left_censored": 1,
+      "right_censored": 8,
+      "touches_domain_boundary": 5
+    },
+    "maximum_wind_m_s": 12.185214042663574,
+    "minimum_wind_m_s": 0.0034447491634637117,
+    "high_wind_screen": {
+      "threshold_m_s": 20.0,
+      "exceeding_member_time_cells": 0,
+      "member_time_area_km2": 0.0
+    },
+    "selected_member_count": 3,
+    "support_denominator": 3,
+    "control_member_included": false,
+    "support_weighting": "equal descriptive frequency of selected perturbed members; not calibrated and not the complete parent ensemble",
+    "member_time_cell_exceedances": 124,
+    "support_weighted_area_time_sum_km2": 115975.76434760909,
+    "support_mass_fraction_absent_from_thresholded_mean": 0.8952968490141774,
+    "comparison_caveat": "Mean-field comparison measures information aggregation, not predictive superiority or novel skill",
+    "forecast_skill": null,
+    "object_precision": null,
+    "object_recall": null,
+    "observational_reference_loaded": false,
+    "tracking_ground_truth": null,
+    "diffusion_status": "UNTESTED",
+    "stages_seconds": {
+      "detect_and_track": 0.0028269720000935195,
+      "support_and_diagnostics": 0.0006945120001091709,
+      "write_arrays_and_events": 0.0023651100000279257,
+      "render": 1.7668926630001351
+    },
+    "warnings": [
+      "Only three selected members and one forecast cycle; no calibration or operational warning claim",
+      "10 m/s functional threshold is not an extreme-weather classification",
+      "Birth/death refer to detected objects; threshold flicker can fragment physical systems",
+      "Domain-edge objects are truncated and explicitly flagged",
+      "Centroid assignment can be ambiguous for crossings; no meteorological identity guarantee",
+      "No clustering of ensemble paths: every member path remains separately represented"
+    ],
+    "elapsed_seconds": 1.7769551260000753
+  },
+  "runtime_seconds": {
+    "data_request": 75.26290392099997,
+    "decode_validate_subset_write": 0.2290508260000479,
+    "baseline_including_plot": 1.7773403840001265
+  },
+  "tests": {
+    "count": 17,
+    "ids": [
+      "test_baseline.BaselineEdgeCases.test_area_filter_uses_km2",
+      "test_baseline.BaselineEdgeCases.test_longitude_seam_crop_rejected_until_supported",
+      "test_baseline.BaselineEdgeCases.test_missing_member_and_time_fail_closed",
+      "test_baseline.BaselineEdgeCases.test_nan_and_duplicate_time_fail_closed",
+      "test_baseline.BaselineEdgeCases.test_no_event_is_valid_empty_not_skill_zero",
+      "test_baseline.BaselineEdgeCases.test_outlier_member_preserved_with_correct_denominator",
+      "test_baseline.BaselineEdgeCases.test_split_merge_and_boundary_flags",
+      "test_baseline.BaselineEdgeCases.test_threshold_dip_does_not_invent_continuity",
+      "test_probe.ProbeValidation.test_complete_inventory_accepted",
+      "test_probe.ProbeValidation.test_duplicate_coordinate_rejected",
+      "test_probe.ProbeValidation.test_duplicate_message_rejected",
+      "test_probe.ProbeValidation.test_longitude_convention",
+      "test_probe.ProbeValidation.test_missing_member_rejected",
+      "test_probe.ProbeValidation.test_missing_time_rejected",
+      "test_probe.ProbeValidation.test_nan_rejected",
+      "test_probe.ProbeValidation.test_reversed_latitude_preserves_pairs",
+      "test_probe.ProbeValidation.test_wrong_units_rejected"
+    ],
+    "log": "trace_v32_probe/verification_tests.log",
+    "artifact_verification": "trace_v32_probe/export_verification.json"
+  },
+  "failures": [
+    {
+      "source": "ECMWF direct",
+      "result": "Proxy CONNECT HTTP 403; no actual GRIB loaded",
+      "log": "trace_v32_probe/outputs/20261001T170852_150866Z/download.log",
+      "classification": "environment/data-access failure"
+    },
+    {
+      "source": "official ECMWF AWS mirror",
+      "result": "HTTP503 Slow Down for index; one attempt",
+      "log": "trace_v32_probe/outputs/20261002T051436_199679Z/download.log",
+      "classification": "source/access availability failure; precise origin not established"
+    }
+  ],
+  "known_limits": [
+    "10 m/s is a functional threshold, not validated extreme-weather detection",
+    "No values reach 20 m/s in this case",
+    "Three selected members are not full or calibrated probability",
+    "No independent reference or event identity labels",
+    "Valid times October4 occur after October3 submission cutoff date",
+    "No 5-km output, GNN, EFI, diffusion or trained physical losses",
+    "Algorithmic splits and tracks are not independently verified meteorological events",
+    "Work hardware metadata is not team-machine metadata"
+  ],
+  "next_steps": [
+    "Confirm user can open persistent handoff and ZIP before new costly work",
+    "Select one historical strong-wind forecast with independent compatible reference; retain medium-range relevance and record any provider substitution",
+    "Before download freeze threshold justification, area km2, duration, region, cycle, leads, members and reference in a new config",
+    "Run existing validated baseline, then independent reference comparison; preserve old outputs",
+    "Report matched/missed/false objects, overlap/displacement/intensity/continuity only where reference supports each metric",
+    "Only after evidence, attempt one bounded scientifically compatible downscaler inference test and checkpoint result"
+  ],
+  "reopen_architecture_only_for": [
+    "original PS contradiction",
+    "scientific error",
+    "decisive prior art",
+    "impossible dependency",
+    "main hypothesis falsified by experiment"
+  ],
+  "deadline": {
+    "date_as_supplied": "October 4",
+    "year": 2026,
+    "exact_cutoff": "UNCONFIRMED"
+  },
+  "source_git_head": "3248584ea803e33190c9a7ad440fbc69a3c027a4",
+  "git_caveat": "HEAD predates uncommitted baseline additions. Included working tree and hashes are authoritative.",
+  "random_seed": 42,
+  "package_versions_file": "trace_v32_probe/requirements-lock.txt",
+  "full_runtime_versions": "trace_v32_probe/outputs/20261002T051658_187908Z/run_manifest.json",
+  "persistent_export_receipt": "Saved separately after upload; do not claim upload from this pre-upload snapshot alone",
+  "v7_execution": {
+    "phase": "v7 frozen benchmark intake",
+    "timestamp_utc": "2026-10-02T15:34:50.420420+00:00",
+    "input_archive_sha256": "3ff0448e32ad48d38a0d468b1ae51e82909a9d57388a41317e3d5397c3ba34b1",
+    "frozen_config_sha256": "a0d9d82ceb318b8f8d8f1fa97dee3796c7ce70cbb63b8e063502ac2b90effc88",
+    "frozen_config_verified": true,
+    "working_config_unchanged": true,
+    "attempt_1": "BLOCKED in core tests: xarray missing; installed after failure",
+    "cds_credentials_present": false,
+    "FANI_real_data_loaded": false,
+    "checkpoint_01_valid": false,
+    "downscaling": "UNTESTED",
+    "next": "bounded official GEFS access attempt; exact ERA5 reference still required"
+  },
+  "checkpoint01": {
+    "config": "trace_v7_work/config_fani_2019_v7.yaml",
+    "config_sha256": "a0d9d82ceb318b8f8d8f1fa97dee3796c7ce70cbb63b8e063502ac2b90effc88",
+    "frozen": true,
+    "core_tests": "12 PASS; implementation evidence only",
+    "preflight": "80/80 archive objects and index sidecars PASS",
+    "downloaded_cycles": 8,
+    "decoded_cycles": 8,
+    "expected_cycles": 8,
+    "members_per_cycle": 5,
+    "control_included": true,
+    "valid_time_utc": "2019-05-03T00:00:00Z",
+    "climatology_years": [
+      1989,
+      2018
+    ],
+    "climate_samples_required": 450,
+    "validation": {
+      "status": "PASS",
+      "frozen_config_sha256": "a0d9d82ceb318b8f8d8f1fa97dee3796c7ce70cbb63b8e063502ac2b90effc88",
+      "checks": [
+        {
+          "name": "required_columns",
+          "pass": true,
+          "missing": []
+        },
+        {
+          "name": "eight_cycles_x_three_methods",
+          "pass": true,
+          "observed": 24,
+          "expected": 24
+        },
+        {
+          "name": "same_valid_time",
+          "pass": true,
+          "observed": [
+            "2019-05-03T00:00:00+00:00"
+          ]
+        },
+        {
+          "name": "imd_reference_lookup_succeeds",
+          "pass": true,
+          "bad_rows": 0
+        },
+        {
+          "name": "imd_reference_values_finite",
+          "pass": true,
+          "bad_rows": 0
+        },
+        {
+          "name": "track_error_present_when_forecast_object_exists",
+          "pass": true,
+          "bad_rows": 0
+        },
+        {
+          "name": "climatological_99_reference_scored",
+          "pass": true,
+          "bad_rows": 0
+        },
+        {
+          "name": "frozen_member_denominator",
+          "pass": true,
+          "expected": 5,
+          "bad_rows": 0
+        },
+        {
+          "name": "efi_sot_present",
+          "pass": true,
+          "bad_rows": 0
+        },
+        {
+          "name": "intensity_comparison_present",
+          "pass": true,
+          "bad_rows": 0
+        },
+        {
+          "name": "lead_curve_has_24_primary_rows",
+          "pass": true,
+          "observed": 24,
+          "expected": 24
+        }
+      ],
+      "problems": [],
+      "guardrails": [
+        "PASS means evidence completeness, not high forecast skill.",
+        "The eight lead points share one valid time and are not independent events.",
+        "Five-member support is not calibrated probability.",
+        "ERA5 may under-resolve cyclone intensity.",
+        "FANI remains held out and thresholds stay frozen."
+      ]
+    },
+    "real_scientific_results": true,
+    "downscaling": "UNTESTED",
+    "gnn": "NOT_EXECUTED",
+    "reference_transport": "Public ERA5 ARCO mirror attempt; no CDS credential available",
+    "raw_inputs": [
+      {
+        "path": "trace_v7_work/data/gefs_leadcurve/gefs_2019042300_leadcurve.grib2",
+        "bytes": 8332868,
+        "sha256": "f2615ee2dede318a5d2cfff9e1c481b33e16164911846c4891609aaf1950da23"
+      },
+      {
+        "path": "trace_v7_work/data/gefs_leadcurve/gefs_2019042400_leadcurve.grib2",
+        "bytes": 8300296,
+        "sha256": "a58d666c1468dde88133b2e21080a336bdd08150f022af4eeafb65338a06d8c8"
+      },
+      {
+        "path": "trace_v7_work/data/gefs_leadcurve/gefs_2019042500_leadcurve.grib2",
+        "bytes": 8317644,
+        "sha256": "976bc50a2f057f6224fb20d46ed3ab3b931833a09382ede33bbea02fbe4f6f21"
+      },
+      {
+        "path": "trace_v7_work/data/gefs_leadcurve/gefs_2019042600_leadcurve.grib2",
+        "bytes": 8312261,
+        "sha256": "b6bb9cc948b763903541cfde7ea529ea858b1175810ebffdf277073dfd84f222"
+      },
+      {
+        "path": "trace_v7_work/data/gefs_leadcurve/gefs_2019042700_leadcurve.grib2",
+        "bytes": 8335613,
+        "sha256": "2c97eb663086417bb6976ff60dce1946d076df18c550584af8d8c2508e793b55"
+      },
+      {
+        "path": "trace_v7_work/data/gefs_leadcurve/gefs_2019042800_leadcurve.grib2",
+        "bytes": 8337799,
+        "sha256": "55392957da510993703c596adf3070d499866fb5c646ea441a7e7ed0c9a4828b"
+      },
+      {
+        "path": "trace_v7_work/data/gefs_leadcurve/gefs_2019042900_leadcurve.grib2",
+        "bytes": 8350183,
+        "sha256": "11281b4222f19a12c73260c922bdda7bf73d98ea430f9e2cfe4d658953e08887"
+      },
+      {
+        "path": "trace_v7_work/data/gefs_leadcurve/gefs_2019043000_leadcurve.grib2",
+        "bytes": 8338272,
+        "sha256": "7cc57a8887b4849065dea9f328d9d93b855dab303dfd372bd4a0cbadd0ba3ab5"
+      }
+    ],
+    "result_file": "trace_v7_work/results/lead_curve.csv",
+    "input_provenance_file": "trace_v7_work/INPUT_VALIDATION_AND_PROVENANCE.json"
+  },
+  "next_action": "Requested checkpoints completed: stop this run. Highest-impact next task is independent development-event data for multivariable cyclone identity/association; never tune on FANI.",
+  "temporal_fani": {
+    "status": "EXECUTED_REAL_TEMPORAL_EVALUATION",
+    "initialization": "2019-04-29T00:00:00Z",
+    "lead_hours": [
+      72,
+      78,
+      84,
+      90,
+      96,
+      102,
+      108,
+      114,
+      120
+    ],
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "method_summaries": {
+      "member_0": {
+        "objects": 10,
+        "links": 8,
+        "algorithmic_segment_count": 2,
+        "selected_segment_id": "member_0-t0-o2",
+        "selected_timesteps": 9,
+        "missed_timesteps": [],
+        "coverage_fraction": 1.0,
+        "continuity_edges_over_window": 1.0,
+        "splits": 0,
+        "merges": 0,
+        "flicker_policy": "No gap bridging",
+        "meteorological_split_merge_accuracy": "NOT ASSESSED",
+        "mean_centroid_error_km": 460.1769813140962,
+        "median_centroid_error_km": 481.42259196337636,
+        "max_centroid_error_km": 731.9556047090795,
+        "closest_puri_approach_proxy": {
+          "valid_time": "2019-05-04T00:00:00+00:00",
+          "distance_km": 305.30237452544156,
+          "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+        }
+      },
+      "member_1": {
+        "objects": 10,
+        "links": 8,
+        "algorithmic_segment_count": 2,
+        "selected_segment_id": "member_1-t0-o2",
+        "selected_timesteps": 9,
+        "missed_timesteps": [],
+        "coverage_fraction": 1.0,
+        "continuity_edges_over_window": 1.0,
+        "splits": 0,
+        "merges": 0,
+        "flicker_policy": "No gap bridging",
+        "meteorological_split_merge_accuracy": "NOT ASSESSED",
+        "mean_centroid_error_km": 329.1305813265569,
+        "median_centroid_error_km": 288.63223645296785,
+        "max_centroid_error_km": 650.0983834005481,
+        "closest_puri_approach_proxy": {
+          "valid_time": "2019-05-04T00:00:00+00:00",
+          "distance_km": 196.60789718657853,
+          "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+        }
+      },
+      "member_2": {
+        "objects": 9,
+        "links": 8,
+        "algorithmic_segment_count": 5,
+        "selected_segment_id": "member_2-t3-o1",
+        "selected_timesteps": 4,
+        "missed_timesteps": [
+          0,
+          1,
+          2,
+          7,
+          8
+        ],
+        "coverage_fraction": 0.4444444444444444,
+        "continuity_edges_over_window": 0.375,
+        "splits": 2,
+        "merges": 0,
+        "flicker_policy": "No gap bridging",
+        "meteorological_split_merge_accuracy": "NOT ASSESSED",
+        "mean_centroid_error_km": 464.4581954830763,
+        "median_centroid_error_km": 464.4251071210932,
+        "max_centroid_error_km": 519.5156167254754,
+        "closest_puri_approach_proxy": {
+          "valid_time": "2019-05-03T00:00:00+00:00",
+          "distance_km": 449.981622766498,
+          "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+        }
+      },
+      "member_3": {
+        "objects": 12,
+        "links": 11,
+        "algorithmic_segment_count": 6,
+        "selected_segment_id": "member_3-t4-o1",
+        "selected_timesteps": 5,
+        "missed_timesteps": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "coverage_fraction": 0.5555555555555556,
+        "continuity_edges_over_window": 0.5,
+        "splits": 1,
+        "merges": 2,
+        "flicker_policy": "No gap bridging",
+        "meteorological_split_merge_accuracy": "NOT ASSESSED",
+        "mean_centroid_error_km": 676.2063336374002,
+        "median_centroid_error_km": 668.6872254211866,
+        "max_centroid_error_km": 750.4264353540296,
+        "closest_puri_approach_proxy": {
+          "valid_time": "2019-05-04T00:00:00+00:00",
+          "distance_km": 366.25528235338106,
+          "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+        }
+      },
+      "member_4": {
+        "objects": 9,
+        "links": 9,
+        "algorithmic_segment_count": 4,
+        "selected_segment_id": "member_4-t1-o1",
+        "selected_timesteps": 4,
+        "missed_timesteps": [
+          0,
+          5,
+          6,
+          7,
+          8
+        ],
+        "coverage_fraction": 0.4444444444444444,
+        "continuity_edges_over_window": 0.375,
+        "splits": 1,
+        "merges": 1,
+        "flicker_policy": "No gap bridging",
+        "meteorological_split_merge_accuracy": "NOT ASSESSED",
+        "mean_centroid_error_km": 536.3688020402537,
+        "median_centroid_error_km": 542.7560277862402,
+        "max_centroid_error_km": 584.1519362763627,
+        "closest_puri_approach_proxy": {
+          "valid_time": "2019-05-02T12:00:00+00:00",
+          "distance_km": 592.237786878871,
+          "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+        }
+      },
+      "ensemble_mean": {
+        "objects": 1,
+        "links": 0,
+        "algorithmic_segment_count": 1,
+        "selected_segment_id": "ensemble_mean-t5-o1",
+        "selected_timesteps": 1,
+        "missed_timesteps": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8
+        ],
+        "coverage_fraction": 0.1111111111111111,
+        "continuity_edges_over_window": 0.0,
+        "splits": 0,
+        "merges": 0,
+        "flicker_policy": "No gap bridging",
+        "meteorological_split_merge_accuracy": "NOT ASSESSED",
+        "mean_centroid_error_km": 579.9451351067534,
+        "median_centroid_error_km": 579.9451351067534,
+        "max_centroid_error_km": 579.9451351067534,
+        "closest_puri_approach_proxy": {
+          "valid_time": "2019-05-03T06:00:00+00:00",
+          "distance_km": 530.4438277770566,
+          "note": "Gale-footprint centroid closest approach, NOT landfall timing"
+        }
+      }
+    },
+    "runtime_seconds": 2.553695632999961,
+    "interpretation": "Wind-object centroid proxy trajectory, not validated cyclone center reconstruction. IMD independent; analytical split/merge correctness unverified. All no-detection times retained.",
+    "config_sha256": "a0d9d82ceb318b8f8d8f1fa97dee3796c7ce70cbb63b8e063502ac2b90effc88",
+    "contract_sha256": "8833d1aee379f21259e26bf61df02aba09305638c7deaebfd0df508e2041b7eb",
+    "input_hashes": {
+      "data/decoded_track/forecast_2019042900.npz": "b2a07a3fdac26920d75f26f99584ac78a51a9541cf6f602e5f3304b10e64c5e1",
+      "data/era5_track/reference_fani_track.nc": "d2d53c70bd5db26e84dfc06a8b87415f703f9590218f4d9a106c4f52d8208d3a",
+      "imd_fani_best_track_20190502_20190504.csv": "64570d0004aa22e257fa79294fddf76657ea7c5f3fcd503244ac8994a006b0a7"
+    },
+    "code_hashes": {
+      "/workspace/scratch/20ef86c2ee7f/trace_v7_work/evaluate_fani_track.py": "760777af8911b208770ac2e347b638a41aba0a73b35909d589813c4d2a3a0797",
+      "../trace_v32_probe/baseline.py": "a6a962fa6dcb65093577d7d3f4f3a1f4e3e5c55ab05ce14fed10cf124d179dbc"
+    },
+    "validation": {
+      "status": "PASS",
+      "checks": {
+        "63_method_time_rows": true,
+        "each_method_all_nine_leads": true,
+        "all_9_imd_intensities": true,
+        "five_members_including_control": true,
+        "frozen_contract_hash_matches": true,
+        "checkpoint01_96h_consistency_ensemble_mean": true,
+        "checkpoint01_96h_consistency_member_support_0p4": true
+      },
+      "scope": "Temporal evidence completeness and cross-checkpoint consistency; NOT strong forecasting skill"
+    }
+  },
+  "negative_control": {
+    "config": "trace_v7_work/negative_control/config_negative_control_01.yaml",
+    "status": "EXECUTED",
+    "summary": {
+      "rows": 7,
+      "lead_curve_rows": 3,
+      "methods": [
+        "SENSITIVITY_efi_0.5",
+        "SENSITIVITY_wind_10",
+        "SENSITIVITY_wind_12.5",
+        "SENSITIVITY_wind_15",
+        "efi_0p8",
+        "ensemble_mean",
+        "member_support_0p4"
+      ],
+      "references": [
+        "ERA5 fixed 17.5 m/s footprint",
+        "ERA5 local seasonal/synoptic 99th-percentile footprint"
+      ],
+      "note": "Historical-case evaluation. Five-member support is not calibrated probability."
+    },
+    "validation": {
+      "status": "PASS",
+      "checks": {
+        "three_primary_methods": true,
+        "same_verification_time": true,
+        "fixed_frozen_threshold": true,
+        "physical_area_threshold": true,
+        "support_denominator_5": true,
+        "no_fabricated_imd_center": true,
+        "independent_source_saved": true,
+        "negative_config_hash_unchanged": true
+      },
+      "scope": "Completeness for independently frozen cyclone-free control; not universal no-hazard truth",
+      "config_sha256": "34ca8767c8c21226cd869f02f5d76c7a92360526ba3d5f9e5f9bd501c3897583"
+    }
+  },
+  "v8_execution": {
+    "pack_sha256": "1b6e3cf1efcd31aeec55acda6d0dd9b1ef12276760f5cfc4d11303bfad43ae36",
+    "negative_control": "COMPLETED_PREVIOUS_RUN_REUSED_VALIDATION_PASS",
+    "negative_control_config_hash": "34ca8767c8c21226cd869f02f5d76c7a92360526ba3d5f9e5f9bd501c3897583",
+    "torch_install": "EXECUTED_SUCCESS_CPU_2.6.0",
+    "gpu_available": false,
+    "gnn": "EXECUTED_REAL_WEATHER_FIVE_SEEDS_15_VALIDATED",
+    "stage2": {
+      "status": "EXECUTED_VALIDATED",
+      "config": "trace_v8_work/STAGE2_EXPERIMENT_CONFIG_v2.json",
+      "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+      "center_source": "official NHC HURDAT2 time-specific positions",
+      "old_fixed_center_config": "preserved and excluded from primary execution",
+      "diffusion_samples_per_parent": 16,
+      "data_log": "trace_v8_work/HRRR_V2_DATA_RESUME.log",
+      "performance": "MEASURED_REAL_HRRR_CONTROLLED_RECONSTRUCTION",
+      "frames": {
+        "train": 8,
+        "validation": 4,
+        "test": 5
+      },
+      "geographic_exclusions": 5,
+      "data_validation": "trace_v8_work/data_stage2_v2/DATA_VALIDATION.json",
+      "results": "trace_v8_work/stage2_run_v2/stage2_metrics.json",
+      "posthoc": "trace_v8_work/stage2_run_v2/STAGE2_FALSE_EXTREMES_AND_SPREAD.json",
+      "runtime_seconds": 13.032299943999988,
+      "independent_test_event_count": 1,
+      "diffusion_skill_gate": "FAIL: large false extremes, poor CRPS and0/5 paired tail/PSD wins",
+      "best_speed_mae_route": "deterministic_plus_exact_coarse_projection",
+      "projected_deterministic_mae_ms": 0.4067064071038743,
+      "projected_bilinear_mae_ms": 0.4138231015527903,
+      "physics_ablation": "trace_v8_work/stage2_run_v2/PHYSICS_ABLATION_SUMMARY.json",
+      "important_baseline_win": "projected bilinear improves unresolvedPSD and peak error over projected deterministic"
+    },
+    "frozen_fani_sha256": "a0d9d82ceb318b8f8d8f1fa97dee3796c7ce70cbb63b8e063502ac2b90effc88",
+    "latest_update": "RUN2_MULTIVARIABLE_DATA_VALIDATION_PASS",
+    "nonfani_training_protocol": {
+      "training_events": [
+        "PHAILIN_2013",
+        "HUDHUD_2014"
+      ],
+      "validation_events": [
+        "TITLI_2018"
+      ],
+      "test_events": [
+        "FANI_2019",
+        "NEGATIVE_2019"
+      ],
+      "lead_hours": [
+        72,
+        96,
+        120
+      ],
+      "config_sha256": "c03d2371559c1078a7b1d3a93a17acd122b01b8f90d1656a533d342fb7a013eb",
+      "status": "DOWNLOADING_REAL_DATA"
+    },
+    "stage2_protocol": {
+      "config_sha256": "e30e2a15a65e79df9a0a29c9bb384dd547e0d42f2b6dae36787440b58de11405",
+      "status": "FROZEN_NOT_EXECUTED",
+      "train_events": [
+        "LAURA_2020",
+        "DELTA_2020"
+      ],
+      "validation_event": "SALLY_2020",
+      "test_event": "IDA_2021",
+      "claim_scope": "controlled reconstruction only"
+    },
+    "runtime_recovered_after_reset": true,
+    "current_torch_available": true,
+    "nonfani_forecast_samples_saved": 9,
+    "current_priority": "RUN2: acquire BULBUL and frozen multivariable features before inference",
+    "stage2_protocol_v2": {
+      "status": "FROZEN_BEFORE_PERFORMANCE",
+      "config": "trace_v8_work/STAGE2_EXPERIMENT_CONFIG_v2.json",
+      "sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+      "source": "official NHC HURDAT2",
+      "time_specific_centers": 22,
+      "diffusion_samples_per_parent": 16,
+      "old_center_outputs": "PROHIBITED_FOR_PRIMARY_BENCHMARK",
+      "old_config_preserved": true
+    },
+    "stage1": {
+      "status": "FIVE_SEED_COMPLETE",
+      "forecast_samples_saved": 9,
+      "ERA5_nonfani": "COMPLETE:432uniondates;405per seasonal window;27years exclude2013,2014,2018",
+      "seed_protocol": "trace_v8_work/STAGE1_FIVE_SEED_PROTOCOL.json",
+      "FANI": "test-only; frozen control untouched",
+      "data_manifest": "trace_v8_work/nonfani_dataset_manifest.json",
+      "reference_dates": 3,
+      "training": "EXECUTED",
+      "dataset_manifest": "trace_v8_work/gnn_samples/dataset_manifest.json",
+      "sample_count": 18,
+      "mesh_nodes": 50177,
+      "directed_edges": 299264,
+      "remapping_validation": {
+        "status": "PASS",
+        "samples": 18,
+        "splits": {
+          "train": 6,
+          "validation": 3,
+          "test": 9
+        },
+        "mesh_nodes": 50177,
+        "directed_edges": 299264,
+        "median_mesh_spacing_km": 15.7811279296875,
+        "target_erasure_count": 0,
+        "minimum_nonempty_roundtrip_area_iou": 1.0,
+        "minimum_peak_change_ms": -0.7957496643066406,
+        "maximum_peak_change_ms": -0.010165214538574219,
+        "climate_samples_per_nonfani": 405,
+        "interpretation": "original independent ERA5 grid remains evaluation target. Remapping losses disclosed; no test tuning."
+      },
+      "mesh_level8_failure": "Hudhud5308km2 training object lost; frozen configv2 addsone regional refinement before training",
+      "level8_archive": "trace_v8_work/STAGE1_LEVEL8_REMAPPING_AUDIT_ARCHIVE.zip",
+      "completed_runs": [
+        {
+          "status": "PASS",
+          "method": "gnn",
+          "seed": 1,
+          "result_sha256": "b9727373f8b2256387c7593ef6dd2e016205d9fc2b7966fef517095ff865c616",
+          "runtime_seconds": 143.42328796799984,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "gnn",
+          "seed": 2,
+          "result_sha256": "e7e99d5593ccc7908d0969be566f274916c16eb5e88d5db11a0cbc7db8b32b8e",
+          "runtime_seconds": 92.48169528199998,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "gnn",
+          "seed": 3,
+          "result_sha256": "c0497b28157e29f9ba9f06fb027d28712bb59b9d0528783435abfe54201ef516",
+          "runtime_seconds": 73.39242460899993,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "gnn",
+          "seed": 4,
+          "result_sha256": "a01b2f9272b0b9aa7b24eb66cbde2f22ec057fef05b803c9501bc62385a1f336",
+          "runtime_seconds": 90.40165624700012,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "gnn",
+          "seed": 5,
+          "result_sha256": "073b220909c15a4eed8a56aa8b617a123b8fd5e9f89baac5113ff6d1d9fe2166",
+          "runtime_seconds": 124.19779157899984,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "linear",
+          "seed": 1,
+          "result_sha256": "f59d3e2ffc85a5f5d9c54baf12fff4fe727b14a91c427784f17464c27297fb62",
+          "runtime_seconds": 5.465446921000421,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "linear",
+          "seed": 2,
+          "result_sha256": "90b3f02332ee2467c99601a5db2020a57a99e053246056f8afba58cb509bbb80",
+          "runtime_seconds": 5.740179860000353,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "linear",
+          "seed": 3,
+          "result_sha256": "905c058462d3811a9324ec257b5b4204468e23192f2068b18640568df4073aba",
+          "runtime_seconds": 3.6834358319999865,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "linear",
+          "seed": 4,
+          "result_sha256": "43d6df9696f944878088171b925d192f1fcfe2e92bf705e2d050c7284ac86a1e",
+          "runtime_seconds": 3.628493676000062,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "linear",
+          "seed": 5,
+          "result_sha256": "3d453cbeae75a4a2245a3d48d41003b4c1dfd5921bb1645c7ec2c20131fce94d",
+          "runtime_seconds": 3.6287566700000298,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "no_message",
+          "seed": 1,
+          "result_sha256": "5343b8fdf1ca6ddf76b48b9b646ae86140f7685bc00e9317e622d6f0a323a1ad",
+          "runtime_seconds": 18.661616918000163,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "no_message",
+          "seed": 2,
+          "result_sha256": "3bb594a125c2a4d936ef05f041d09a6258ab766895dd1d546cb846273f13805b",
+          "runtime_seconds": 14.424171951000062,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "no_message",
+          "seed": 3,
+          "result_sha256": "043c45c6fafd25f4f9b328f00a82186b7420fe3e21c5cb4221cdb4b78ec7daa9",
+          "runtime_seconds": 11.85579819399993,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "no_message",
+          "seed": 4,
+          "result_sha256": "76750d88aa4926e8ff4f2f6a54caf9a6d6724cade2973702a49f91814feefc17",
+          "runtime_seconds": 14.968253430000004,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        },
+        {
+          "status": "PASS",
+          "method": "no_message",
+          "seed": 5,
+          "result_sha256": "c21d5fd46422b1fddbcfbe2c838e4853280b52f403603fa31ff123820f5cd632",
+          "runtime_seconds": 16.370116706999852,
+          "selection": "Titli validation BCE only",
+          "independent_positive_test_events": 1,
+          "FANI_test_only": true
+        }
+      ],
+      "aggregation_status": "PRIMARY_FIVE_SEED_COMPLETE",
+      "aggregation_outputs": [
+        "/workspace/scratch/20ef86c2ee7f/trace_v8_work/stage1_seed_summary/STAGE1_FIVE_SEED_RESULTS.json",
+        "/workspace/scratch/20ef86c2ee7f/trace_v8_work/stage1_seed_summary/STAGE1_SEED_SUMMARY.csv"
+      ],
+      "aggregation_sha256": {
+        "/workspace/scratch/20ef86c2ee7f/trace_v8_work/stage1_seed_summary/STAGE1_FIVE_SEED_RESULTS.json": "dbaa47dd1d41b4ee44936881ed5d269c6ef93b85780c3f557db3f703a9165b01",
+        "/workspace/scratch/20ef86c2ee7f/trace_v8_work/stage1_seed_summary/STAGE1_SEED_SUMMARY.csv": "1ebbf08b0f21b12c9b2c24bd7c304ae41306fae6dc0b2197d32c60453bb3cf6c"
+      }
+    },
+    "stage1_execution_only": {
+      "completed_runs": 15,
+      "expected_runs": 15,
+      "seed2_gnn": "RERUN_NO_VALID_PERSISTED_OUTPUT",
+      "frozen_protocols_unchanged": true
+    },
+    "run2": {
+      "phase": "MULTIVARIABLE_DATA_VALIDATION_PASS",
+      "bulbul_skill_opened": false,
+      "additional_variables": [
+        "pres_msl",
+        "tmp_2m",
+        "spfh_2m"
+      ],
+      "extra_records_loaded": 180,
+      "expected_extra_records": 180,
+      "multivar_runs_completed": 0,
+      "bulbul_data_validation": "PASS",
+      "climate_samples": 450,
+      "reference": "ERA5 2019-11-09 00UTC",
+      "multivariable_data_validation": "PASS",
+      "feature_count": 14,
+      "train_samples": 6,
+      "validation_samples": 3,
+      "test_samples": 3
+    }
+  },
+  "persistent_data_offload": {
+    "archive": "TRACE_IMMUTABLE_CONTROL_DATA.zip",
+    "library_file_id": "libfile_39198844e614819199d57b3c4b87940f",
+    "sha256": "2135781da867251a0630db042008376543c951ba637c942af1f1bdcd2b6d8ea6",
+    "file_count": 136,
+    "reason": "Library512MiB limit, not scientific alteration"
+  }
+}

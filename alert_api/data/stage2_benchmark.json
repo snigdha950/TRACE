@@ -1,0 +1,23 @@
+{
+  "benchmark_type": "controlled HRRR 12->5 km reconstruction; not operational India/NEPS-G forecast verification",
+  "primary_route": "deterministic mean + exact coarse projection",
+  "primary_metrics": {
+    "speed_mae_ms": 0.3178,
+    "q99_abs_error_ms": 0.1673,
+    "threshold_iou": 0.5846,
+    "exact_projected_coarse_uv_error": "~ machine zero"
+  },
+  "safety_diffusion_v3": {
+    "role": "complementary",
+    "fair_crps_ms": 0.2602,
+    "unresolved_psd_error": 0.2351,
+    "spread_skill_ratio": 1.52,
+    "far_field_extreme_sample_frame_fraction": 0.139
+  },
+  "physics_tail_v4": {
+    "implemented": true,
+    "adopted": false,
+    "reason": "failed pre-registered adoption gate; full PDE/thermodynamic conservation is not demonstrated"
+  },
+  "router": "deterministic primary; diffusion only behind diagnostics"
+}

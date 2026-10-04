@@ -1,0 +1,67 @@
+{
+  "requests": [
+    {
+      "status": "READY_SOFTWARE_HANDOFF",
+      "crop_bbox": {
+        "south": 13.0,
+        "north": 24.25,
+        "west": 80.0,
+        "east": 95.25
+      },
+      "requested_input_grid_km": 12,
+      "requested_output_grid_km": 5,
+      "preferred_route": "deterministic_mean_plus_exact_coarse_projection",
+      "diffusion_route": "complementary_only_when_safety_diagnostics_pass",
+      "same_event_stage2_skill_status": "NOT_VALIDATED_FOR_BULBUL",
+      "event_id": "BULBUL_2019",
+      "lead_hours": 72,
+      "core": {
+        "lat": 18.75,
+        "lon": 88.25,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      }
+    },
+    {
+      "status": "READY_SOFTWARE_HANDOFF",
+      "crop_bbox": {
+        "south": 12.0,
+        "north": 25.25,
+        "west": 77.75,
+        "east": 95.25
+      },
+      "requested_input_grid_km": 12,
+      "requested_output_grid_km": 5,
+      "preferred_route": "deterministic_mean_plus_exact_coarse_projection",
+      "diffusion_route": "complementary_only_when_safety_diagnostics_pass",
+      "same_event_stage2_skill_status": "NOT_VALIDATED_FOR_BULBUL",
+      "event_id": "BULBUL_2019",
+      "lead_hours": 96,
+      "core": {
+        "lat": 17.75,
+        "lon": 87.5,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      }
+    },
+    {
+      "status": "READY_SOFTWARE_HANDOFF",
+      "crop_bbox": {
+        "south": 10.0,
+        "north": 28.5,
+        "west": 76.5,
+        "east": 95.75
+      },
+      "requested_input_grid_km": 12,
+      "requested_output_grid_km": 5,
+      "preferred_route": "deterministic_mean_plus_exact_coarse_projection",
+      "diffusion_route": "complementary_only_when_safety_diagnostics_pass",
+      "same_event_stage2_skill_status": "NOT_VALIDATED_FOR_BULBUL",
+      "event_id": "BULBUL_2019",
+      "lead_hours": 120,
+      "core": {
+        "lat": 17.75,
+        "lon": 88.5,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      }
+    }
+  ]
+}

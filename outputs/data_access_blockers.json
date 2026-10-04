@@ -1,0 +1,42 @@
+{
+  "schema": "trace-data-blockers/1.0",
+  "blockers": [
+    {
+      "gap": "direct_nepsg_validation",
+      "status": "BLOCKED_BY_TARGET_DATA_ACCESS",
+      "implemented_readiness": "tested ingest validator + frozen validation protocol",
+      "claim_allowed": false
+    },
+    {
+      "gap": "real_second_hazard_skill",
+      "status": "OFFICIAL_EVENT_TARGETS_FROZEN_INPUT_FIELDS_NOT_BUNDLED",
+      "implemented_readiness": "tested upper/lower-tail evaluator + official IMD heat/cold event registry",
+      "claim_allowed": false
+    },
+    {
+      "gap": "same_event_india_stage2",
+      "status": "BLOCKED_BY_MATCHED_COARSE_FINE_REFERENCE_DATA",
+      "implemented_readiness": "software handoff + fail-closed integration readiness + frozen protocol",
+      "claim_allowed": false
+    }
+  ],
+  "principle": "Data-access blockers are exposed explicitly and cannot be converted into positive skill claims by software readiness alone.",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

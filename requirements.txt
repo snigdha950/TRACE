@@ -1,0 +1,10 @@
+# Runtime
+fastapi>=0.128
+uvicorn>=0.48
+pydantic>=2.13
+numpy>=2.3
+scipy>=1.17
+torch>=2.6
+xarray>=2025.1
+# Needed by fastapi.testclient (used by test_alert_api.py and run_trace_demo.py)
+httpx>=0.27

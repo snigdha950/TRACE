@@ -1,0 +1,75 @@
+{
+  "schema": "trace-evidence-ledger/1.0",
+  "release": "v1.8",
+  "headline_metrics": [
+    {
+      "claim": "BULBUL wind spherical GNN Climate99 area-weighted IoU",
+      "value": 0.42979942438385327,
+      "source": "scientific_reproduction/stage1/BULBUL_GNN_REPRODUCTION.json",
+      "generator": "scientific_reproduction/stage1/reproduce_bulbul_gnn.py",
+      "tier": "FULL_FROZEN_INFERENCE_REPLAY_INCLUDED",
+      "independent_weather_cases": 1,
+      "note": "Mean over 5 seeds x 3 correlated lead forecasts sharing one valid time."
+    },
+    {
+      "claim": "BULBUL wind spherical GNN AP",
+      "value": 0.6069505476562604,
+      "source": "scientific_reproduction/stage1/BULBUL_GNN_REPRODUCTION.json",
+      "generator": "scientific_reproduction/stage1/reproduce_bulbul_gnn.py",
+      "tier": "FULL_FROZEN_INFERENCE_REPLAY_INCLUDED"
+    },
+    {
+      "claim": "Stage-2 v2 held-out Ida deterministic projected MAE",
+      "source": "scientific_reproduction/stage2_v2/stage2_run_v2/stage2_metrics.json",
+      "generator": "scientific_reproduction/stage2_v2/run_stage2_weather_v2.py via run_portable_stage2_v2.py",
+      "tier": "FULL_TRAIN_EVAL_REPLAY_INCLUDED",
+      "note": "Original scientific runner is unchanged; wrapper only makes optional eccodes version logging nonfatal for prepared-NPZ replay."
+    },
+    {
+      "claim": "Stage-2 four-event event-equal deterministic MAE",
+      "value": 0.3178067875138786,
+      "source": "scientific_reproduction/archived_v3/STAGE2_DIFFUSION_SAFETY_V3_DIAGNOSTICS.json",
+      "tier": "ARCHIVED_EXECUTED_DIAGNOSTIC",
+      "note": "Later cross-event runner is documented in REPRODUCTION.md but is not bundled in this compact release."
+    },
+    {
+      "claim": "Stage-2 safety diffusion fair CRPS",
+      "value": 0.2602071614284556,
+      "source": "scientific_reproduction/archived_v3/STAGE2_DIFFUSION_SAFETY_V3_DIAGNOSTICS.json",
+      "tier": "ARCHIVED_EXECUTED_DIAGNOSTIC"
+    },
+    {
+      "claim": "Location-feature occlusion sensitivity",
+      "value": {
+        "original_iou": 0.4297994243838533,
+        "occluded_iou": 0.35990004823737604,
+        "delta": -0.06989937614647729
+      },
+      "source": "scientific_reproduction/stage1/LOCATION_FEATURE_OCCLUSION_RESULTS.json",
+      "generator": "scientific_reproduction/stage1/run_location_occlusion.py",
+      "tier": "FULL_INFERENCE_SENSITIVITY_REPLAY_INCLUDED",
+      "note": "Inference-only occlusion, not a retrained no-location ablation."
+    },
+    {
+      "claim": "Matched retrained explicit-location ablation (seed 1)",
+      "value": {
+        "full_feature_iou": 0.451678789975567,
+        "no_explicit_location_iou": 0.4366344536627011,
+        "full_feature_ap": 0.5892665197039961,
+        "no_explicit_location_ap": 0.5647068799501217
+      },
+      "source": "scientific_reproduction/stage1/RETRAINED_NO_EXPLICIT_LOCATION_NOMESSAGE_SEED1.json",
+      "generator": "scientific_reproduction/stage1/run_matched_location_ablation_seed1.py",
+      "tier": "FULL_RETRAINED_SINGLE_SEED_DIAGNOSTIC_INCLUDED",
+      "note": "Matched no-message nonlinear branch, same frozen split/hyperparameters, seed 1. Removes sin/cos latitude/longitude channels only; spherical mesh geometry retained. Not a five-seed full-GNN generalization proof."
+    },
+    {
+      "claim": "5 km UI marker",
+      "value": 5.0,
+      "source": "alert_api/rebuild_alerts.py",
+      "tier": "SOFTWARE_DISPLAY_ONLY",
+      "note": "Explicitly not a predicted impact radius and not Stage-2 output."
+    }
+  ],
+  "reproduction_command": "cd scientific_reproduction && python reproduce_science.py"
+}

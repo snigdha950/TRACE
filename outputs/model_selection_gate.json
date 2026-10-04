@@ -1,0 +1,37 @@
+{
+  "schema": "trace-model-selection-gate/1.0",
+  "frozen_event_evidence": {
+    "FANI_2019_all_lead_climate99_iou": {
+      "no_message": 0.18286,
+      "spherical_gnn": 0.18035,
+      "gnn_minus_no_message": -0.00251
+    },
+    "BULBUL_2019_wind_climate99_iou": {
+      "no_message": 0.4228,
+      "spherical_gnn": 0.4298,
+      "gnn_minus_no_message": 0.007
+    }
+  },
+  "decision": "RETAIN_MESSAGE_PASSING_AS_EXPERIMENTAL_BRANCH_NOT_PROVEN_DEFAULT",
+  "reason": "Frozen held-out events disagree on the incremental value of message passing. Spherical geometry and nonlinear learning remain useful, but the graph-message increment is context-dependent and small in current evidence.",
+  "scientific_significance_test": false,
+  "no_retraining_or_retuning_for_this_gate": true,
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

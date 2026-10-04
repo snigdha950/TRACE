@@ -1,0 +1,39 @@
+{
+  "schema": "trace-governance-status/1.0",
+  "policy": {
+    "schema": "trace-operational-safety/1.0",
+    "machine_route": "INTERNAL_HUMAN_REVIEW_QUEUE",
+    "human_review_required": true,
+    "public_warning_release_allowed": false,
+    "reasons": [
+      "prototype output may enter internal human review",
+      "TRACE is not an official warning authority"
+    ],
+    "prototype_alert": true,
+    "official_warning": false,
+    "calibrated_probability": false
+  },
+  "human_review_required": true,
+  "official_warning_release_allowed": false,
+  "warning_authority": "EXTERNAL_TO_TRACE",
+  "fail_closed_on_provenance_failure": true,
+  "authentication_rate_limiting_24x7_monitoring": "NOT_IMPLEMENTED_RESEARCH_PROTOTYPE",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

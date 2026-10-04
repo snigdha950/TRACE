@@ -1,0 +1,103 @@
+{
+  "schema": "trace-final-demo-run-manifest/1.8",
+  "generated_utc": "2026-10-04T14:37:18.056690+00:00",
+  "command": "python run_trace_demo.py",
+  "local_runtime_seconds": 7.4235,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "status": "PASS",
+  "api_version": "1.8.0-prototype",
+  "frozen_evidence_verified": true,
+  "alerts_json_rebuilt_byte_identical_hash": "89a92f51c82ba823fb0449314582947e0510abcee8a01a797897642fc0552d73",
+  "rebuild": {
+    "cmd": [
+      "C:\\Users\\B Singdha Naidu\\Downloads\\TRACE_PROTOTYPE_V1_8_CLEAN\\.venv\\Scripts\\python.exe",
+      "rebuild_alerts.py"
+    ],
+    "returncode": 0,
+    "seconds": 4.9396,
+    "output": "TRACE_ALERT_REBUILD_PASS [(72, 'MODERATE'), (96, 'SEVERE'), (120, 'SEVERE')]\n"
+  },
+  "tests": {
+    "cmd": [
+      "C:\\Users\\B Singdha Naidu\\Downloads\\TRACE_PROTOTYPE_V1_8_CLEAN\\.venv\\Scripts\\python.exe",
+      "test_alert_api.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.6742,
+    "output": "C:\\Users\\B Singdha Naidu\\Downloads\\TRACE_PROTOTYPE_V1_8_CLEAN\\.venv\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n  from starlette.testclient import TestClient as TestClient  # noqa\nTRACE_ALERT_API_TEST_PASS_V1_8\n"
+  },
+  "input_hashes": {
+    "source_evidence/BULBUL_2019_72.npz": "4100328676d871f628f2c033c19a43c09b6c7b31dfcfead1319c204603dc3106",
+    "source_evidence/BULBUL_2019_96.npz": "263c86e51028a4d183105b4f00d438b3c1d73acbf68f95028270ec4aeb52eba8",
+    "source_evidence/BULBUL_2019_120.npz": "d65b462566d83dfcdd00cb715d028d3bd11a3d4b5d8296247e3b38fa11997de1",
+    "source_evidence/gnn_seed1.pt": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+    "source_evidence/gnn_seed2.pt": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+    "source_evidence/gnn_seed3.pt": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+    "source_evidence/gnn_seed4.pt": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+    "source_evidence/gnn_seed5.pt": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57",
+    "data/alerts.json": "89a92f51c82ba823fb0449314582947e0510abcee8a01a797897642fc0552d73",
+    "data/stage2_benchmark.json": "e6513a08a82d989b4e44cede36a701102532260baf2bad9539f1fbd00f39ae67"
+  },
+  "generated_output_hashes": {
+    "outputs/impact_objects.json": "bd35e3dfd48f978bc942fc1523aa415827a6b6b1d23ab4277bd0d2287097d575",
+    "outputs/geojson.json": "e9e14611f1e31f2dac75980924494d36fd1e8b7ac0be3e12ccac67753d8e0168",
+    "outputs/stage2_route_status.json": "ac115fbed5e5d68af1f01ded3bce5fb70dec9bc749fc2505522261b9f268b18c",
+    "outputs/api_status.json": "6ef383c98d69009970786cb87724099374be832d66eaab354bb4904c39c38c8c",
+    "outputs/openapi_schema.json": "4e14f0f532072c9c7e444d7ddf9ca5d873d28952cbc8d7cab88bea3851a22242",
+    "outputs/provenance_integrity.json": "d84545e94da82316c37db98231ee84bfcc525e2e1e8f777e1da76cad967c5b73",
+    "outputs/readiness.json": "9ea642c72f2a64c1985ef67136a3fe11927b99e51f588a5777735b50e500c12e",
+    "outputs/lead_evolution.json": "36f601d6fa2a02c8df61912e3fc05dd46856ab79f1953814f68224f5b1fee3cf",
+    "outputs/tracking_software_demo.json": "db280439d65a018e65260b7915c4a08cb8e1bf94a2dc0fa28d46328952573715",
+    "outputs/weakness_mitigation.json": "186c68d5500d851cc765ec4cbf9405ce08d82993f45e7c8d3497f88b2640811f",
+    "outputs/model_selection_defence.json": "18934138f97375d88394f245bc93416a56618d7d1164bbcc61a7be799ee30474",
+    "outputs/hazard_readiness.json": "0c6f980427b5b4add1538e394bd3cbbf049d3df13e72cbad07d249f300c36531",
+    "outputs/data_adapters.json": "fbf70ccccd36c3b0e6e8802c43ffffc49db0524286f7c088f722cb52d761efa8",
+    "outputs/integration_audit.json": "5f7d1313adea0b3ba623444b6e6ff55eaeaf0813423e5ae6169cd9a9f8e12131",
+    "outputs/fani_temporal_tracking_evidence.json": "501bc2dde44e37f5df1602be25ef077d28d11dc38894a59864b78b5ec03f13d3",
+    "outputs/model_selection_gate.json": "fe38fc2cede913658a68a249aed27edb663bb6917ec5a7f2ddcc76d5b512e1a5",
+    "outputs/screening_brief.json": "02fae2534e935cac168eca4af976e53ab6956e10fbd6fd3447fcfd467c14d46a",
+    "outputs/integration_readiness.json": "bc2a440ba5cf1a7229e0cc59cd07507f22a4d7c79f00ada4049babd967d80fb6",
+    "outputs/provider_ingest_validation.json": "2788b7259a2055a70e476d3f2cda07737f1c7fbe55ff547bc1c66fc4ecddc85d",
+    "outputs/hazard_generic_evaluator_smoke.json": "71bb842c8e6fb1a5787b080759e4852300b385178e50e74bd2de3c46f9f0d75c",
+    "outputs/governance_status.json": "41561df602597e2de5d033686d04026d28dca98d9ec4e497bb8931ab3c788ec0",
+    "outputs/operational_safety.json": "1a8bc8aa238206f29afef6320a590ba90fc6ff23cbff50638b69909ce2dfea98",
+    "outputs/controlled_stream_replay.json": "ed0c8934d402808aa7dc99e252efb17bb67f11c8dfe6c182cae1f0ab7379039a",
+    "outputs/official_hazard_event_targets.json": "1fbab0da572f4616570d7525c74aff64cc69ecfd1ae454ee93f2672a65c7692d",
+    "outputs/data_access_blockers.json": "faf05cb83437d1c8dbb1cd7df06b8b18ce7e82056fa3bcd344dcc2fabc945e91",
+    "outputs/TEST_REPORT.json": "274f91af51f59de29d2b57327895838abde0ca821c0a9c7b4d3be6b9b9d52e3f"
+  },
+  "software_capabilities_added": [
+    "content-hash provenance verification",
+    "readiness endpoint gated by frozen evidence integrity",
+    "lead-evolution view explicitly distinguished from physical trajectory",
+    "generic time-ordered track-object builder with 4D frame boxes",
+    "weakness-mitigation API for national-screening risks",
+    "provider-adapter readiness map for NEPS-G transition",
+    "hazard-readiness matrix for validated vs unvalidated hazards",
+    "model-selection defence endpoint that avoids GNN overclaiming",
+    "Stage1->Stage2 integration audit endpoint",
+    "hash-verified recovered FANI sequential wind-footprint tracking evidence",
+    "tested provider-ingest validator and local file preflight for NetCDF/NPZ",
+    "tested hazard-generic upper/lower-tail footprint evaluator",
+    "frozen NEPS-G, heat-wave, and same-event Stage-2 validation protocols",
+    "cross-event architecture evidence gate derived from frozen FANI/BULBUL aggregates",
+    "30-second screening brief endpoint",
+    "fail-closed operational-safety governance with mandatory human review",
+    "offline controlled stream replay for saved alert records",
+    "official 2019 India heat/cold event-target registry for future held-out validation",
+    "machine-readable external-data blocker status"
+  ],
+  "evidence_boundaries": [
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Severity labels are prototype categories, not official warnings or calibrated probabilities.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "5 km means output/display grid spacing, not guaranteed 5 km forecast accuracy.",
+    "The bundled +72/+96/+120 BULBUL snapshots share one valid time, so they are lead-sensitivity evidence rather than a physical trajectory.",
+    "The /api/v1/tracks/build endpoint is a generic builder. Separately, recovered FANI evidence contains executed sequential wind-footprint tracking, but large errors remain and cyclone-center/landfall skill is not validated.",
+    "The v1.8 stream replay is offline software-operability evidence, not continuous operational NWP streaming.",
+    "Official IMD heat/cold event descriptions freeze future test targets; they are not TRACE heat/cold skill results.",
+    "Every prototype alert requires human review and cannot self-authorize an official/public warning."
+  ]
+}

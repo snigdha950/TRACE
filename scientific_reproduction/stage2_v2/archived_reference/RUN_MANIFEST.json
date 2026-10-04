@@ -1,0 +1,23 @@
+{
+  "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+  "dataset_sha256": "f6322db9ca20c02f23308e68b8e32af63981b0c934ecf741438a91969eba9698",
+  "code_sha256": "6240a8f732840c45a69215da78c194b59e3e2d1d158a8f861d92546dd675b650",
+  "timestamp_utc": "2026-10-02T22:52:00.753860+00:00",
+  "packages": {
+    "torch": "2.6.0+cpu",
+    "numpy": "2.5.3",
+    "scipy": "1.17.0",
+    "eccodes": "2.49.0"
+  },
+  "hardware": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "models": "locally trained small convolutional mean and residual DDPM; no pretrained CorrDiff checkpoint",
+  "normalization": "training-only U/V channel mean/std; training-only post-mean residual std; all inference denormalized to m/s",
+  "test_outputs": [
+    "2021082818",
+    "2021082912",
+    "2021082918",
+    "2021083012",
+    "2021083018"
+  ],
+  "runtime_seconds": 13.032299943999988
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "trace-nepsg-validation-protocol/1.0",
+  "status": "FROZEN_NOT_EXECUTED_DATA_ACCESS_REQUIRED",
+  "purpose": "Direct target-provider validation without changing TRACE thresholds after viewing test results.",
+  "target_provider": "NCMRWF NEPS-G",
+  "target_characteristics": {
+    "global_ensemble": true,
+    "nominal_horizontal_resolution_km": 12,
+    "forecast_horizon_days": 10,
+    "ensemble_member_requirement": "control plus perturbed members; preserve native member identities"
+  },
+  "minimum_fields": ["latitude", "longitude", "initialization_time", "valid_time_or_lead", "ensemble_member", "10m_wind_or_hazard_field"],
+  "evaluation_window_hours": [72, 240],
+  "frozen_metrics": ["area_weighted_iou", "average_precision_threshold_free", "object_precision", "object_recall", "false_objects", "centroid_error_km", "leadwise_skill"],
+  "comparators": ["analytical_extremeness", "same_feature_linear", "no_message_nonlinear", "spherical_gnn"],
+  "rules": [
+    "No threshold or architecture tuning on the held-out NEPS-G test event.",
+    "Provider regridding and units must be logged before scoring.",
+    "Member support must not be called a calibrated probability.",
+    "Report all baseline wins and negative results.",
+    "A passing ingest contract is not a skill result."
+  ],
+  "blocked_by": "Authenticated historical NCMRWF/NEPS-G data not bundled in TRACE v1.4."
+}

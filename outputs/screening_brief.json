@@ -1,0 +1,37 @@
+{
+  "schema": "trace-screening-brief/1.0",
+  "thirty_second_position": "TRACE automatically detects and tracks medium-range extreme-weather footprints on spherical ensemble fields, then routes detected regions to an evidence-gated 12-to-5 km refinement layer and a transparent prototype alert API.",
+  "three_measured_proofs": [
+    "Held-out BULBUL wind spherical GNN: Climate99 IoU about 0.430, AP about 0.607; analytical SOT about 0.281.",
+    "Executed FANI sequential wind-footprint tracking: nine +72 to +120 h frames; best member covered 9/9 frames with mean centroid error about 329 km, while large errors are retained.",
+    "Controlled four-event HRRR 12-to-5 km deterministic route: speed MAE about 0.3178 m/s, q99 absolute error about 0.1673 m/s, threshold IoU about 0.5846, exact coarse U/V consistency near machine zero."
+  ],
+  "three_boundaries": [
+    "GEFSv12 substitutes for NEPS-G; direct target-provider skill is not yet measured.",
+    "Heat/cold/hail/frost real-event skill is not yet measured.",
+    "Stage-2 is controlled HRRR reconstruction, not same-event India downscaling validation."
+  ],
+  "fast_proof_endpoints": [
+    "/api/v1/tracking/evidence",
+    "/api/v1/model-selection/gate",
+    "/api/v1/provenance"
+  ],
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

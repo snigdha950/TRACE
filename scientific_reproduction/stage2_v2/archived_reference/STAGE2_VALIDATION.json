@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "test_storms": 1,
+  "test_frames": 5,
+  "diffusion_samples_per_parent": 16,
+  "config_sha256": "b6c3597a0375650c59bd8ce0e6ddcb36f7f3604755668ff35401fdc16683bf72",
+  "all_outputs_finite": true,
+  "test_role": "Ida only, no tuning",
+  "runtime_seconds": 13.032299943999988
+}

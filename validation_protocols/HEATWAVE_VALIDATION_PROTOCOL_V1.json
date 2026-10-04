@@ -1,0 +1,24 @@
+{
+  "schema": "trace-heatwave-validation-protocol/1.0",
+  "status": "FROZEN_NOT_EXECUTED_DATA_REQUIRED",
+  "purpose": "Second-hazard held-out evaluation using temperature-extreme geographic footprints.",
+  "hazard": "heat_wave_or_heat_dome_proxy",
+  "candidate_forecast_inputs": ["NEPS-G 2m temperature ensemble", "GEFSv12 2m temperature ensemble as transparent substitute"],
+  "candidate_reference_inputs": ["IMD gridded daily maximum temperature", "IMDAA/ERA5 temperature reference where appropriate"],
+  "target_definition": {
+    "primary": "location- and season-aware upper-tail temperature anomaly footprint",
+    "polarity": "upper",
+    "climatology": "30-year seasonal baseline when available",
+    "note": "Official IMD heat-wave warning criteria are not approximated unless the required station/regional criteria are implemented exactly."
+  },
+  "lead_hours": [72, 96, 120, 144, 168, 192, 216, 240],
+  "frozen_metrics": ["area_weighted_iou", "precision", "recall", "false_objects", "footprint_area_bias", "centroid_error_km", "leadwise_skill"],
+  "rules": [
+    "Select train/validation/test dates before viewing test skill.",
+    "No threshold tuning on the held-out event.",
+    "Retain failed or weak results.",
+    "Do not claim cyclone-trained weights transfer to temperature hazards without retraining/evaluation.",
+    "Software hazard-generic evaluation is not multi-hazard scientific validation."
+  ],
+  "blocked_by": "No frozen held-out heat-wave forecast/reference dataset is bundled in v1.4."
+}

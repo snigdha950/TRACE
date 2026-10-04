@@ -1,0 +1,66 @@
+{
+  "schema": "trace-lead-evolution/1.0",
+  "event_id": "BULBUL_2019",
+  "verification_valid_times": [
+    "2019-11-09T00:00:00+00:00"
+  ],
+  "independent_verification_time_count": 1,
+  "forecast_snapshot_count": 3,
+  "shared_valid_time_across_snapshots": true,
+  "statistical_note": "The headline BULBUL score summarizes correlated lead forecasts and five frozen seeds; the three leads are not three independent meteorological verification cases.",
+  "forecast_snapshots": [
+    {
+      "forecast_lead_hours": 72,
+      "severity": "MODERATE",
+      "core": {
+        "lat": 18.75,
+        "lon": 88.25,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      },
+      "macro_footprint_area_km2": 841069.6536311498,
+      "mean_seed_agreement": 0.9584708948740226
+    },
+    {
+      "forecast_lead_hours": 96,
+      "severity": "SEVERE",
+      "core": {
+        "lat": 17.75,
+        "lon": 87.5,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      },
+      "macro_footprint_area_km2": 995564.6773583628,
+      "mean_seed_agreement": 0.9473916238060249
+    },
+    {
+      "forecast_lead_hours": 120,
+      "severity": "SEVERE",
+      "core": {
+        "lat": 17.75,
+        "lon": 88.5,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      },
+      "macro_footprint_area_km2": 1336709.579524687,
+      "mean_seed_agreement": 0.9246582832148714
+    }
+  ],
+  "interpretation": "These frozen BULBUL snapshots verify the same valid time at different forecast leads. They show lead sensitivity/robustness, NOT a physical storm trajectory across time.",
+  "scientific_trajectory_validation": false,
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

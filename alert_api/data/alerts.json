@@ -1,0 +1,1065 @@
+{
+  "schema": "trace-alert-collection/1.0",
+  "alerts": [
+    {
+      "schema": "trace-alert/1.0",
+      "event_id": "BULBUL_2019",
+      "event_type": "extreme_wind_cyclone_context",
+      "valid_time": "2019-11-09T00:00:00+00:00",
+      "forecast_lead_hours": 72,
+      "severity": "MODERATE",
+      "severity_rule": "TRACE_SEVERITY_RULE_V1_NOT_CALIBRATED",
+      "anomaly_core_coordinate": {
+        "lat": 18.75,
+        "lon": 88.25,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      },
+      "display_marker_radius_km": 5.0,
+      "display_marker_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.25,
+              18.794966018186226
+            ],
+            [
+              88.25619981851244,
+              18.794581225516946
+            ],
+            [
+              88.26229347267238,
+              18.79343343664254
+            ],
+            [
+              88.26817662035103,
+              18.791542305864052
+            ],
+            [
+              88.27374853229587,
+              18.78894021531206
+            ],
+            [
+              88.27891382020839,
+              18.785671719213692
+            ],
+            [
+              88.28358407236625,
+              18.781792779387924
+            ],
+            [
+              88.28767936856444,
+              18.77736980519887
+            ],
+            [
+              88.29112964830603,
+              18.772478514566806
+            ],
+            [
+              88.2938759087831,
+              18.7672026357107
+            ],
+            [
+              88.29587121220536,
+              18.7616324720205
+            ],
+            [
+              88.29708148539437,
+              18.75586335478625
+            ],
+            [
+              88.29748609820498,
+              18.749994010404865
+            ],
+            [
+              88.29707821119084,
+              18.744124870113875
+            ],
+            [
+              88.29586488692958,
+              18.738356351242413
+            ],
+            [
+              88.29386696349178,
+              18.732787139410007
+            ],
+            [
+              88.29111869260551,
+              18.727512501039254
+            ],
+            [
+              88.2876671490672,
+              18.722622654983162
+            ],
+            [
+              88.28357142181058,
+              18.71820123101529
+            ],
+            [
+              88.27890160070875,
+              18.714323841410927
+            ],
+            [
+              88.2737375765912,
+              18.711056789889135
+            ],
+            [
+              88.26816767505493,
+              18.708455939823324
+            ],
+            [
+              88.26228714739247,
+              18.706565760903455
+            ],
+            [
+              88.2561965443065,
+              18.70541857039244
+            ],
+            [
+              88.25,
+              18.70503398181377
+            ],
+            [
+              88.24380345569351,
+              18.70541857039244
+            ],
+            [
+              88.23771285260754,
+              18.706565760903455
+            ],
+            [
+              88.23183232494509,
+              18.708455939823324
+            ],
+            [
+              88.22626242340881,
+              18.711056789889135
+            ],
+            [
+              88.22109839929126,
+              18.714323841410927
+            ],
+            [
+              88.21642857818944,
+              18.71820123101529
+            ],
+            [
+              88.21233285093281,
+              18.722622654983162
+            ],
+            [
+              88.2088813073945,
+              18.727512501039254
+            ],
+            [
+              88.20613303650823,
+              18.732787139410007
+            ],
+            [
+              88.20413511307044,
+              18.738356351242413
+            ],
+            [
+              88.20292178880918,
+              18.744124870113875
+            ],
+            [
+              88.20251390179503,
+              18.749994010404865
+            ],
+            [
+              88.20291851460564,
+              18.75586335478625
+            ],
+            [
+              88.20412878779466,
+              18.7616324720205
+            ],
+            [
+              88.20612409121692,
+              18.7672026357107
+            ],
+            [
+              88.20887035169399,
+              18.772478514566806
+            ],
+            [
+              88.21232063143557,
+              18.77736980519887
+            ],
+            [
+              88.21641592763376,
+              18.781792779387924
+            ],
+            [
+              88.22108617979161,
+              18.785671719213692
+            ],
+            [
+              88.22625146770415,
+              18.78894021531206
+            ],
+            [
+              88.23182337964899,
+              18.791542305864052
+            ],
+            [
+              88.23770652732763,
+              18.79343343664254
+            ],
+            [
+              88.24380018148757,
+              18.794581225516946
+            ],
+            [
+              88.25,
+              18.794966018186226
+            ]
+          ]
+        ]
+      },
+      "predicted_impact_radius_km": null,
+      "macro_threat_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              81.0,
+              21.25
+            ],
+            [
+              81.0,
+              17.25
+            ],
+            [
+              81.25,
+              17.0
+            ],
+            [
+              84.75,
+              14.5
+            ],
+            [
+              85.75,
+              14.0
+            ],
+            [
+              87.25,
+              14.25
+            ],
+            [
+              90.0,
+              15.25
+            ],
+            [
+              94.25,
+              17.25
+            ],
+            [
+              94.25,
+              18.0
+            ],
+            [
+              93.25,
+              20.0
+            ],
+            [
+              91.25,
+              22.75
+            ],
+            [
+              91.0,
+              23.0
+            ],
+            [
+              87.75,
+              23.25
+            ],
+            [
+              85.0,
+              23.25
+            ],
+            [
+              83.75,
+              23.0
+            ],
+            [
+              82.0,
+              22.25
+            ],
+            [
+              81.0,
+              21.25
+            ]
+          ]
+        ]
+      },
+      "macro_footprint_area_km2": 841069.6536311498,
+      "model_evidence": {
+        "model": "wind spherical GNN, frozen 5-seed consensus",
+        "mean_seed_agreement_over_footprint": 0.9584708948740226,
+        "core_seed_agreement": 1.0,
+        "core_classifier_score_not_calibrated_probability": 0.9758904576301575,
+        "max_ensemble_mean_wind_ms": 16.78289222717285,
+        "max_member_support_fraction": 0.4,
+        "max_member_climate_support_fraction": 1.0,
+        "max_efi": 0.874973364332168,
+        "max_sot": 5.4535006635059435,
+        "max_wind_minus_climate_q99_ms": 5.908883428573608
+      },
+      "evidence_gate": {
+        "status": "PASS",
+        "checks": {
+          "seed_agreement_ge_0p6": true,
+          "efi_ge_0p5": true,
+          "sot_gt_0": true,
+          "wind_or_support_signal": true
+        },
+        "note": "Gate supports prototype alert display only; it is not an official warning standard."
+      },
+      "refinement_request": {
+        "status": "READY_SOFTWARE_HANDOFF",
+        "crop_bbox": {
+          "south": 13.0,
+          "north": 24.25,
+          "west": 80.0,
+          "east": 95.25
+        },
+        "requested_input_grid_km": 12,
+        "requested_output_grid_km": 5,
+        "preferred_route": "deterministic_mean_plus_exact_coarse_projection",
+        "diffusion_route": "complementary_only_when_safety_diagnostics_pass",
+        "same_event_stage2_skill_status": "NOT_VALIDATED_FOR_BULBUL"
+      },
+      "source_boundary": {
+        "stage1_provider": "NOAA GEFSv12 retrospective ensemble substitute",
+        "operational_target_provider": "NCMRWF NEPS-G",
+        "neps_g_validated": false,
+        "five_km_means_grid_spacing_not_forecast_accuracy": true,
+        "five_km_marker_is_ui_locator_not_hazard_radius": true,
+        "calibrated_probability_claim": false
+      },
+      "provenance": {
+        "sample_sha256": "4100328676d871f628f2c033c19a43c09b6c7b31dfcfead1319c204603dc3106",
+        "checkpoint_sha256_by_seed": {
+          "1": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+          "2": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+          "3": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+          "4": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+          "5": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57"
+        },
+        "prediction_consensus_threshold": 0.6
+      }
+    },
+    {
+      "schema": "trace-alert/1.0",
+      "event_id": "BULBUL_2019",
+      "event_type": "extreme_wind_cyclone_context",
+      "valid_time": "2019-11-09T00:00:00+00:00",
+      "forecast_lead_hours": 96,
+      "severity": "SEVERE",
+      "severity_rule": "TRACE_SEVERITY_RULE_V1_NOT_CALIBRATED",
+      "anomaly_core_coordinate": {
+        "lat": 17.75,
+        "lon": 87.5,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      },
+      "display_marker_radius_km": 5.0,
+      "display_marker_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              87.5,
+              17.794966018186223
+            ],
+            [
+              87.50616414575566,
+              17.794581231337368
+            ],
+            [
+              87.51222274275254,
+              17.79343345952728
+            ],
+            [
+              87.51807205356599,
+              17.791542355893228
+            ],
+            [
+              87.52361193207929,
+              17.788940300714632
+            ],
+            [
+              87.52874754129871,
+              17.78567184580645
+            ],
+            [
+              87.53339097932414,
+              17.781792950179007
+            ],
+            [
+              87.53746278543025,
+              17.777370020182975
+            ],
+            [
+              87.5408933003491,
+              17.772478770725932
+            ],
+            [
+              87.54362385743381,
+              17.767202927220296
+            ],
+            [
+              87.54560778437369,
+              17.761632790646967
+            ],
+            [
+              87.54681119846529,
+              17.75586369044856
+            ],
+            [
+              87.54721358206024,
+              17.74999435186193
+            ],
+            [
+              87.54680812863775,
+              17.744125205730832
+            ],
+            [
+              87.54560185392207,
+              17.73835666978352
+            ],
+            [
+              87.54361547050821,
+              17.732787430804134
+            ],
+            [
+              87.54088302850417,
+              17.727512757065817
+            ],
+            [
+              87.5374513286749,
+              17.72262286983182
+            ],
+            [
+              87.53337911841709,
+              17.718201401681387
+            ],
+            [
+              87.52873608454117,
+              17.71432396789975
+            ],
+            [
+              87.52360166023057,
+              17.711056875215178
+            ],
+            [
+              87.51806366663598,
+              17.708455989804662
+            ],
+            [
+              87.51221681229711,
+              17.70656578376532
+            ],
+            [
+              87.50616107592592,
+              17.705418576206885
+            ],
+            [
+              87.5,
+              17.70503398181377
+            ],
+            [
+              87.49383892407408,
+              17.705418576206885
+            ],
+            [
+              87.48778318770289,
+              17.70656578376532
+            ],
+            [
+              87.48193633336402,
+              17.708455989804662
+            ],
+            [
+              87.47639833976945,
+              17.711056875215178
+            ],
+            [
+              87.47126391545883,
+              17.71432396789975
+            ],
+            [
+              87.46662088158291,
+              17.718201401681387
+            ],
+            [
+              87.4625486713251,
+              17.72262286983182
+            ],
+            [
+              87.45911697149583,
+              17.727512757065817
+            ],
+            [
+              87.45638452949179,
+              17.732787430804134
+            ],
+            [
+              87.45439814607795,
+              17.73835666978352
+            ],
+            [
+              87.45319187136225,
+              17.744125205730832
+            ],
+            [
+              87.45278641793976,
+              17.74999435186193
+            ],
+            [
+              87.45318880153472,
+              17.75586369044856
+            ],
+            [
+              87.45439221562633,
+              17.761632790646967
+            ],
+            [
+              87.45637614256619,
+              17.767202927220296
+            ],
+            [
+              87.4591066996509,
+              17.772478770725932
+            ],
+            [
+              87.46253721456976,
+              17.777370020182975
+            ],
+            [
+              87.46660902067586,
+              17.781792950179007
+            ],
+            [
+              87.4712524587013,
+              17.78567184580645
+            ],
+            [
+              87.47638806792071,
+              17.788940300714632
+            ],
+            [
+              87.48192794643403,
+              17.791542355893228
+            ],
+            [
+              87.48777725724746,
+              17.79343345952728
+            ],
+            [
+              87.49383585424434,
+              17.794581231337368
+            ],
+            [
+              87.5,
+              17.794966018186223
+            ]
+          ]
+        ]
+      },
+      "predicted_impact_radius_km": null,
+      "macro_threat_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              84.75,
+              13.5
+            ],
+            [
+              85.75,
+              13.0
+            ],
+            [
+              86.0,
+              13.0
+            ],
+            [
+              88.75,
+              14.0
+            ],
+            [
+              94.25,
+              17.25
+            ],
+            [
+              94.25,
+              18.25
+            ],
+            [
+              93.25,
+              20.0
+            ],
+            [
+              91.25,
+              22.5
+            ],
+            [
+              91.0,
+              22.75
+            ],
+            [
+              89.0,
+              24.0
+            ],
+            [
+              88.0,
+              24.25
+            ],
+            [
+              84.0,
+              23.25
+            ],
+            [
+              83.5,
+              23.0
+            ],
+            [
+              81.25,
+              21.75
+            ],
+            [
+              79.0,
+              18.0
+            ],
+            [
+              78.75,
+              17.5
+            ],
+            [
+              79.0,
+              17.25
+            ],
+            [
+              84.75,
+              13.5
+            ]
+          ]
+        ]
+      },
+      "macro_footprint_area_km2": 995564.6773583628,
+      "model_evidence": {
+        "model": "wind spherical GNN, frozen 5-seed consensus",
+        "mean_seed_agreement_over_footprint": 0.9473916238060249,
+        "core_seed_agreement": 1.0,
+        "core_classifier_score_not_calibrated_probability": 0.9768164753913879,
+        "max_ensemble_mean_wind_ms": 19.31505584716797,
+        "max_member_support_fraction": 0.6,
+        "max_member_climate_support_fraction": 1.0,
+        "max_efi": 0.874973364332168,
+        "max_sot": 4.050203722711271,
+        "max_wind_minus_climate_q99_ms": 6.832667322158816
+      },
+      "evidence_gate": {
+        "status": "PASS",
+        "checks": {
+          "seed_agreement_ge_0p6": true,
+          "efi_ge_0p5": true,
+          "sot_gt_0": true,
+          "wind_or_support_signal": true
+        },
+        "note": "Gate supports prototype alert display only; it is not an official warning standard."
+      },
+      "refinement_request": {
+        "status": "READY_SOFTWARE_HANDOFF",
+        "crop_bbox": {
+          "south": 12.0,
+          "north": 25.25,
+          "west": 77.75,
+          "east": 95.25
+        },
+        "requested_input_grid_km": 12,
+        "requested_output_grid_km": 5,
+        "preferred_route": "deterministic_mean_plus_exact_coarse_projection",
+        "diffusion_route": "complementary_only_when_safety_diagnostics_pass",
+        "same_event_stage2_skill_status": "NOT_VALIDATED_FOR_BULBUL"
+      },
+      "source_boundary": {
+        "stage1_provider": "NOAA GEFSv12 retrospective ensemble substitute",
+        "operational_target_provider": "NCMRWF NEPS-G",
+        "neps_g_validated": false,
+        "five_km_means_grid_spacing_not_forecast_accuracy": true,
+        "five_km_marker_is_ui_locator_not_hazard_radius": true,
+        "calibrated_probability_claim": false
+      },
+      "provenance": {
+        "sample_sha256": "263c86e51028a4d183105b4f00d438b3c1d73acbf68f95028270ec4aeb52eba8",
+        "checkpoint_sha256_by_seed": {
+          "1": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+          "2": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+          "3": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+          "4": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+          "5": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57"
+        },
+        "prediction_consensus_threshold": 0.6
+      }
+    },
+    {
+      "schema": "trace-alert/1.0",
+      "event_id": "BULBUL_2019",
+      "event_type": "extreme_wind_cyclone_context",
+      "valid_time": "2019-11-09T00:00:00+00:00",
+      "forecast_lead_hours": 120,
+      "severity": "SEVERE",
+      "severity_rule": "TRACE_SEVERITY_RULE_V1_NOT_CALIBRATED",
+      "anomaly_core_coordinate": {
+        "lat": 17.75,
+        "lon": 88.5,
+        "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+      },
+      "display_marker_radius_km": 5.0,
+      "display_marker_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5,
+              17.794966018186223
+            ],
+            [
+              88.50616414575566,
+              17.794581231337368
+            ],
+            [
+              88.51222274275254,
+              17.79343345952728
+            ],
+            [
+              88.51807205356599,
+              17.791542355893228
+            ],
+            [
+              88.52361193207929,
+              17.788940300714632
+            ],
+            [
+              88.52874754129871,
+              17.78567184580645
+            ],
+            [
+              88.53339097932414,
+              17.781792950179007
+            ],
+            [
+              88.53746278543025,
+              17.777370020182975
+            ],
+            [
+              88.5408933003491,
+              17.772478770725932
+            ],
+            [
+              88.54362385743381,
+              17.767202927220296
+            ],
+            [
+              88.54560778437369,
+              17.761632790646967
+            ],
+            [
+              88.54681119846529,
+              17.75586369044856
+            ],
+            [
+              88.54721358206025,
+              17.74999435186193
+            ],
+            [
+              88.54680812863775,
+              17.744125205730832
+            ],
+            [
+              88.54560185392207,
+              17.73835666978352
+            ],
+            [
+              88.54361547050821,
+              17.732787430804134
+            ],
+            [
+              88.54088302850418,
+              17.727512757065817
+            ],
+            [
+              88.5374513286749,
+              17.72262286983182
+            ],
+            [
+              88.53337911841709,
+              17.718201401681387
+            ],
+            [
+              88.52873608454117,
+              17.71432396789975
+            ],
+            [
+              88.52360166023057,
+              17.711056875215178
+            ],
+            [
+              88.51806366663598,
+              17.708455989804662
+            ],
+            [
+              88.51221681229711,
+              17.70656578376532
+            ],
+            [
+              88.50616107592592,
+              17.705418576206885
+            ],
+            [
+              88.5,
+              17.70503398181377
+            ],
+            [
+              88.49383892407408,
+              17.705418576206885
+            ],
+            [
+              88.48778318770289,
+              17.70656578376532
+            ],
+            [
+              88.48193633336403,
+              17.708455989804662
+            ],
+            [
+              88.47639833976945,
+              17.711056875215178
+            ],
+            [
+              88.47126391545883,
+              17.71432396789975
+            ],
+            [
+              88.46662088158291,
+              17.718201401681387
+            ],
+            [
+              88.4625486713251,
+              17.72262286983182
+            ],
+            [
+              88.45911697149583,
+              17.727512757065817
+            ],
+            [
+              88.4563845294918,
+              17.732787430804134
+            ],
+            [
+              88.45439814607795,
+              17.73835666978352
+            ],
+            [
+              88.45319187136225,
+              17.744125205730832
+            ],
+            [
+              88.45278641793976,
+              17.74999435186193
+            ],
+            [
+              88.45318880153472,
+              17.75586369044856
+            ],
+            [
+              88.45439221562633,
+              17.761632790646967
+            ],
+            [
+              88.45637614256619,
+              17.767202927220296
+            ],
+            [
+              88.4591066996509,
+              17.772478770725932
+            ],
+            [
+              88.46253721456976,
+              17.777370020182975
+            ],
+            [
+              88.46660902067586,
+              17.781792950179007
+            ],
+            [
+              88.4712524587013,
+              17.78567184580645
+            ],
+            [
+              88.47638806792072,
+              17.788940300714632
+            ],
+            [
+              88.48192794643403,
+              17.791542355893228
+            ],
+            [
+              88.48777725724747,
+              17.79343345952728
+            ],
+            [
+              88.49383585424435,
+              17.794581231337368
+            ],
+            [
+              88.5,
+              17.794966018186223
+            ]
+          ]
+        ]
+      },
+      "predicted_impact_radius_km": null,
+      "macro_threat_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.5,
+              27.5
+            ],
+            [
+              80.0,
+              21.75
+            ],
+            [
+              77.5,
+              11.25
+            ],
+            [
+              77.5,
+              11.0
+            ],
+            [
+              78.0,
+              11.0
+            ],
+            [
+              86.25,
+              12.0
+            ],
+            [
+              87.0,
+              12.25
+            ],
+            [
+              89.25,
+              13.25
+            ],
+            [
+              90.25,
+              13.75
+            ],
+            [
+              94.75,
+              17.0
+            ],
+            [
+              94.75,
+              17.25
+            ],
+            [
+              94.5,
+              18.0
+            ],
+            [
+              94.25,
+              18.5
+            ],
+            [
+              89.75,
+              27.0
+            ],
+            [
+              89.25,
+              27.25
+            ],
+            [
+              88.5,
+              27.5
+            ]
+          ]
+        ]
+      },
+      "macro_footprint_area_km2": 1336709.579524687,
+      "model_evidence": {
+        "model": "wind spherical GNN, frozen 5-seed consensus",
+        "mean_seed_agreement_over_footprint": 0.9246582832148714,
+        "core_seed_agreement": 1.0,
+        "core_classifier_score_not_calibrated_probability": 0.9739474058151245,
+        "max_ensemble_mean_wind_ms": 17.764413833618164,
+        "max_member_support_fraction": 0.6,
+        "max_member_climate_support_fraction": 1.0,
+        "max_efi": 0.874973364332168,
+        "max_sot": 7.322123032657486,
+        "max_wind_minus_climate_q99_ms": 5.800008230209352
+      },
+      "evidence_gate": {
+        "status": "PASS",
+        "checks": {
+          "seed_agreement_ge_0p6": true,
+          "efi_ge_0p5": true,
+          "sot_gt_0": true,
+          "wind_or_support_signal": true
+        },
+        "note": "Gate supports prototype alert display only; it is not an official warning standard."
+      },
+      "refinement_request": {
+        "status": "READY_SOFTWARE_HANDOFF",
+        "crop_bbox": {
+          "south": 10.0,
+          "north": 28.5,
+          "west": 76.5,
+          "east": 95.75
+        },
+        "requested_input_grid_km": 12,
+        "requested_output_grid_km": 5,
+        "preferred_route": "deterministic_mean_plus_exact_coarse_projection",
+        "diffusion_route": "complementary_only_when_safety_diagnostics_pass",
+        "same_event_stage2_skill_status": "NOT_VALIDATED_FOR_BULBUL"
+      },
+      "source_boundary": {
+        "stage1_provider": "NOAA GEFSv12 retrospective ensemble substitute",
+        "operational_target_provider": "NCMRWF NEPS-G",
+        "neps_g_validated": false,
+        "five_km_means_grid_spacing_not_forecast_accuracy": true,
+        "five_km_marker_is_ui_locator_not_hazard_radius": true,
+        "calibrated_probability_claim": false
+      },
+      "provenance": {
+        "sample_sha256": "d65b462566d83dfcdd00cb715d028d3bd11a3d4b5d8296247e3b38fa11997de1",
+        "checkpoint_sha256_by_seed": {
+          "1": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+          "2": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+          "3": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+          "4": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+          "5": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57"
+        },
+        "prediction_consensus_threshold": 0.6
+      }
+    }
+  ],
+  "frozen_thresholds": {
+    "gnn_probability_threshold": 0.5,
+    "min_object_area_km2": 5000.0,
+    "efi_primary": 0.8,
+    "efi_sensitivity": 0.5,
+    "fixed_wind_primary_ms": 17.5,
+    "fixed_wind_sensitivity_ms": 12.5,
+    "member_support_threshold": 0.4,
+    "seed_consensus_threshold": 0.6
+  }
+}

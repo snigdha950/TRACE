@@ -1,0 +1,234 @@
+{
+  "status": "EXECUTED_CHECKPOINT_LOCATION_OCCLUSION_SENSITIVITY",
+  "meaning": "Inference-only sensitivity test. Explicit spherical position features are replaced by their training means; this is NOT a retrained no-location ablation.",
+  "rows": [
+    {
+      "seed": 1,
+      "lead_hours": 120,
+      "original": {
+        "iou": 0.36955917487221834,
+        "ap": 0.5260714916954086,
+        "pred_area_km2": 1551569.2527233928
+      },
+      "location_mean_occluded": {
+        "iou": 0.23027301702775083,
+        "ap": 0.5802245051862485,
+        "pred_area_km2": 2476193.7783369427
+      }
+    },
+    {
+      "seed": 1,
+      "lead_hours": 72,
+      "original": {
+        "iou": 0.4358494873843024,
+        "ap": 0.5741583868695264,
+        "pred_area_km2": 912844.7040638328
+      },
+      "location_mean_occluded": {
+        "iou": 0.3430209282681025,
+        "ap": 0.6723481962331713,
+        "pred_area_km2": 1285760.2290690932
+      }
+    },
+    {
+      "seed": 1,
+      "lead_hours": 96,
+      "original": {
+        "iou": 0.390418600631729,
+        "ap": 0.5599721759315043,
+        "pred_area_km2": 1173218.2009098614
+      },
+      "location_mean_occluded": {
+        "iou": 0.2841156971061141,
+        "ap": 0.6100468859973105,
+        "pred_area_km2": 1798163.2273127614
+      }
+    },
+    {
+      "seed": 2,
+      "lead_hours": 120,
+      "original": {
+        "iou": 0.42120535488394717,
+        "ap": 0.5995706838329828,
+        "pred_area_km2": 1341381.8143180187
+      },
+      "location_mean_occluded": {
+        "iou": 0.4474489334052238,
+        "ap": 0.6112567326712965,
+        "pred_area_km2": 895897.100800857
+      }
+    },
+    {
+      "seed": 2,
+      "lead_hours": 72,
+      "original": {
+        "iou": 0.50413232702475,
+        "ap": 0.6528489178034359,
+        "pred_area_km2": 826437.6407696609
+      },
+      "location_mean_occluded": {
+        "iou": 0.41816689952201685,
+        "ap": 0.5726638686925888,
+        "pred_area_km2": 595086.7514961377
+      }
+    },
+    {
+      "seed": 2,
+      "lead_hours": 96,
+      "original": {
+        "iou": 0.46701111257127037,
+        "ap": 0.6830844314419595,
+        "pred_area_km2": 984110.5668481481
+      },
+      "location_mean_occluded": {
+        "iou": 0.40572803707850835,
+        "ap": 0.5889907649150219,
+        "pred_area_km2": 643837.8445755029
+      }
+    },
+    {
+      "seed": 3,
+      "lead_hours": 120,
+      "original": {
+        "iou": 0.3773892991556361,
+        "ap": 0.5256588396115568,
+        "pred_area_km2": 1351841.9952330492
+      },
+      "location_mean_occluded": {
+        "iou": 0.3870905850858905,
+        "ap": 0.5447284178640743,
+        "pred_area_km2": 1118815.7400877401
+      }
+    },
+    {
+      "seed": 3,
+      "lead_hours": 72,
+      "original": {
+        "iou": 0.4701518923791424,
+        "ap": 0.5435462921750562,
+        "pred_area_km2": 811486.9554893572
+      },
+      "location_mean_occluded": {
+        "iou": 0.4719644168485454,
+        "ap": 0.5442600194801344,
+        "pred_area_km2": 614154.4222284821
+      }
+    },
+    {
+      "seed": 3,
+      "lead_hours": 96,
+      "original": {
+        "iou": 0.4466794125967701,
+        "ap": 0.5995564193559723,
+        "pred_area_km2": 932809.0891268312
+      },
+      "location_mean_occluded": {
+        "iou": 0.42078779621922124,
+        "ap": 0.571344982690482,
+        "pred_area_km2": 680840.1711872619
+      }
+    },
+    {
+      "seed": 4,
+      "lead_hours": 120,
+      "original": {
+        "iou": 0.422090083945927,
+        "ap": 0.663782843400867,
+        "pred_area_km2": 1204137.3186512976
+      },
+      "location_mean_occluded": {
+        "iou": 0.3316966493683548,
+        "ap": 0.5927976719258823,
+        "pred_area_km2": 1318410.162720331
+      }
+    },
+    {
+      "seed": 4,
+      "lead_hours": 72,
+      "original": {
+        "iou": 0.4592889924171486,
+        "ap": 0.6979022320672699,
+        "pred_area_km2": 905449.0549148448
+      },
+      "location_mean_occluded": {
+        "iou": 0.3877794263661273,
+        "ap": 0.6126892203946901,
+        "pred_area_km2": 863398.3802435189
+      }
+    },
+    {
+      "seed": 4,
+      "lead_hours": 96,
+      "original": {
+        "iou": 0.46918838813814323,
+        "ap": 0.7092668079340194,
+        "pred_area_km2": 965592.2376009328
+      },
+      "location_mean_occluded": {
+        "iou": 0.3389279140169418,
+        "ap": 0.5983055272922709,
+        "pred_area_km2": 1101852.0278687393
+      }
+    },
+    {
+      "seed": 5,
+      "lead_hours": 120,
+      "original": {
+        "iou": 0.3641568088398516,
+        "ap": 0.5968181672269559,
+        "pred_area_km2": 1638985.700087815
+      },
+      "location_mean_occluded": {
+        "iou": 0.3306054266514628,
+        "ap": 0.5429731471110372,
+        "pred_area_km2": 1277609.3546044654
+      }
+    },
+    {
+      "seed": 5,
+      "lead_hours": 72,
+      "original": {
+        "iou": 0.43034209016451264,
+        "ap": 0.5887767603726246,
+        "pred_area_km2": 911208.4123500718
+      },
+      "location_mean_occluded": {
+        "iou": 0.313025935870629,
+        "ap": 0.5271563117953929,
+        "pred_area_km2": 610867.7576697227
+      }
+    },
+    {
+      "seed": 5,
+      "lead_hours": 96,
+      "original": {
+        "iou": 0.41952834075245077,
+        "ap": 0.583243765124768,
+        "pred_area_km2": 1139716.7506857459
+      },
+      "location_mean_occluded": {
+        "iou": 0.28786906072575097,
+        "ap": 0.4665284099026205,
+        "pred_area_km2": 779558.16077476
+      }
+    }
+  ],
+  "summary": {
+    "original": {
+      "mean_iou": 0.4297994243838533,
+      "sd_iou": 0.0411926371082771,
+      "mean_ap": 0.6069505476562606,
+      "sd_ap": 0.060610005985158755
+    },
+    "location_mean_occluded": {
+      "mean_iou": 0.35990004823737604,
+      "sd_iou": 0.06721648699456179,
+      "mean_ap": 0.575754310810148,
+      "sd_ap": 0.047415598588650854
+    },
+    "delta_occluded_minus_original": {
+      "mean_iou": -0.06989937614647729,
+      "mean_ap": -0.0311962368461125
+    }
+  }
+}

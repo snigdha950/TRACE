@@ -1,0 +1,109 @@
+{
+  "schema": "trace-provenance-integrity/1.0",
+  "status": "PASS",
+  "all_frozen_artifacts_verified": true,
+  "checks": [
+    {
+      "kind": "sample",
+      "lead_hours": 72,
+      "expected_sha256": "4100328676d871f628f2c033c19a43c09b6c7b31dfcfead1319c204603dc3106",
+      "actual_sha256": "4100328676d871f628f2c033c19a43c09b6c7b31dfcfead1319c204603dc3106",
+      "match": true
+    },
+    {
+      "kind": "sample",
+      "lead_hours": 96,
+      "expected_sha256": "263c86e51028a4d183105b4f00d438b3c1d73acbf68f95028270ec4aeb52eba8",
+      "actual_sha256": "263c86e51028a4d183105b4f00d438b3c1d73acbf68f95028270ec4aeb52eba8",
+      "match": true
+    },
+    {
+      "kind": "sample",
+      "lead_hours": 120,
+      "expected_sha256": "d65b462566d83dfcdd00cb715d028d3bd11a3d4b5d8296247e3b38fa11997de1",
+      "actual_sha256": "d65b462566d83dfcdd00cb715d028d3bd11a3d4b5d8296247e3b38fa11997de1",
+      "match": true
+    },
+    {
+      "kind": "checkpoint",
+      "seed": 1,
+      "expected_sha256": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+      "actual_sha256": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+      "match": true
+    },
+    {
+      "kind": "checkpoint",
+      "seed": 2,
+      "expected_sha256": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+      "actual_sha256": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+      "match": true
+    },
+    {
+      "kind": "checkpoint",
+      "seed": 3,
+      "expected_sha256": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+      "actual_sha256": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+      "match": true
+    },
+    {
+      "kind": "checkpoint",
+      "seed": 4,
+      "expected_sha256": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+      "actual_sha256": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+      "match": true
+    },
+    {
+      "kind": "checkpoint",
+      "seed": 5,
+      "expected_sha256": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57",
+      "actual_sha256": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57",
+      "match": true
+    },
+    {
+      "kind": "frozen_alert_collection",
+      "expected_sha256": "89a92f51c82ba823fb0449314582947e0510abcee8a01a797897642fc0552d73",
+      "actual_sha256": "89a92f51c82ba823fb0449314582947e0510abcee8a01a797897642fc0552d73",
+      "match": true
+    },
+    {
+      "kind": "supplemental_executed_fani_temporal_record",
+      "artifact": "FANI_TEMPORAL_EVIDENCE.json",
+      "expected_sha256": "1bc6b717473a6292c0c45c7f832ee63a5807374101e80361da03d26aaf90b1a1",
+      "actual_sha256": "1bc6b717473a6292c0c45c7f832ee63a5807374101e80361da03d26aaf90b1a1",
+      "match": true
+    },
+    {
+      "kind": "supplemental_executed_fani_temporal_record",
+      "artifact": "TEMPORAL_FANI_RESULTS.md",
+      "expected_sha256": "8896f0da3ec5c476219e016d9b3d54e3a65f11a0c69934b65e1f4cb7f6dede07",
+      "actual_sha256": "8896f0da3ec5c476219e016d9b3d54e3a65f11a0c69934b65e1f4cb7f6dede07",
+      "match": true
+    },
+    {
+      "kind": "supplemental_executed_fani_temporal_record",
+      "artifact": "TRACE_CURRENT_STATE_FANI.json",
+      "expected_sha256": "7e89eaedd70f47726ef1df4730f3eb7475de67f8c2794701788f1f264d81f814",
+      "actual_sha256": "7e89eaedd70f47726ef1df4730f3eb7475de67f8c2794701788f1f264d81f814",
+      "match": true
+    }
+  ],
+  "note": "Integrity verifies bundled frozen inputs/checkpoints, the frozen alert collection, and recovered executed FANI temporal evidence records; record integrity does not erase the stated scientific limitations.",
+  "api_version": "1.8.0-prototype",
+  "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+  "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+  "prototype_alert": true,
+  "official_warning": false,
+  "calibrated_probability": false,
+  "limitations": [
+    "Research prototype; not an operational warning service.",
+    "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+    "The learned classifier score is not a calibrated probability.",
+    "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+    "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+    "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+    "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+    "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+    "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+    "All prototype alerts require human review; the API never authorizes public or official warning release."
+  ]
+}

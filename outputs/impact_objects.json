@@ -1,0 +1,470 @@
+{
+  "72": {
+    "schema": "trace-impact-object/1.5",
+    "event_id": "BULBUL_2019",
+    "valid_time": "2019-11-09T00:00:00+00:00",
+    "forecast_lead_hours": 72,
+    "prototype_severity": "MODERATE",
+    "macro_threat_footprint_geojson": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            81.0,
+            21.25
+          ],
+          [
+            81.0,
+            17.25
+          ],
+          [
+            81.25,
+            17.0
+          ],
+          [
+            84.75,
+            14.5
+          ],
+          [
+            85.75,
+            14.0
+          ],
+          [
+            87.25,
+            14.25
+          ],
+          [
+            90.0,
+            15.25
+          ],
+          [
+            94.25,
+            17.25
+          ],
+          [
+            94.25,
+            18.0
+          ],
+          [
+            93.25,
+            20.0
+          ],
+          [
+            91.25,
+            22.75
+          ],
+          [
+            91.0,
+            23.0
+          ],
+          [
+            87.75,
+            23.25
+          ],
+          [
+            85.0,
+            23.25
+          ],
+          [
+            83.75,
+            23.0
+          ],
+          [
+            82.0,
+            22.25
+          ],
+          [
+            81.0,
+            21.25
+          ]
+        ]
+      ]
+    },
+    "macro_footprint_area_km2": 841069.6536311498,
+    "anomaly_core_coordinate": {
+      "lat": 18.75,
+      "lon": 88.25,
+      "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+    },
+    "display_marker_radius_km": 5.0,
+    "predicted_impact_radius_km": null,
+    "display_marker_meaning": "UI locator only; not modeled hazard extent and not Stage-2 output",
+    "model_evidence": {
+      "model": "wind spherical GNN, frozen 5-seed consensus",
+      "mean_seed_agreement_over_footprint": 0.9584708948740226,
+      "core_seed_agreement": 1.0,
+      "core_classifier_score_not_calibrated_probability": 0.9758904576301575,
+      "max_ensemble_mean_wind_ms": 16.78289222717285,
+      "max_member_support_fraction": 0.4,
+      "max_member_climate_support_fraction": 1.0,
+      "max_efi": 0.874973364332168,
+      "max_sot": 5.4535006635059435,
+      "max_wind_minus_climate_q99_ms": 5.908883428573608
+    },
+    "stage2_route": {
+      "benchmark_type": "controlled HRRR 12->5 km reconstruction; not operational India/NEPS-G forecast verification",
+      "primary_route": "deterministic mean + exact coarse projection",
+      "primary_metrics": {
+        "speed_mae_ms": 0.3178,
+        "q99_abs_error_ms": 0.1673,
+        "threshold_iou": 0.5846,
+        "exact_projected_coarse_uv_error": "~ machine zero"
+      },
+      "safety_diffusion_v3": {
+        "role": "complementary",
+        "fair_crps_ms": 0.2602,
+        "unresolved_psd_error": 0.2351,
+        "spread_skill_ratio": 1.52,
+        "far_field_extreme_sample_frame_fraction": 0.139
+      },
+      "physics_tail_v4": {
+        "implemented": true,
+        "adopted": false,
+        "reason": "failed pre-registered adoption gate; full PDE/thermodynamic conservation is not demonstrated"
+      },
+      "router": "deterministic primary; diffusion only behind diagnostics"
+    },
+    "stage2_transition_label": "software handoff only; same-event BULBUL 12->5 km skill is not claimed",
+    "provenance": {
+      "sample_sha256": "4100328676d871f628f2c033c19a43c09b6c7b31dfcfead1319c204603dc3106",
+      "checkpoint_sha256_by_seed": {
+        "1": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+        "2": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+        "3": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+        "4": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+        "5": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57"
+      },
+      "prediction_consensus_threshold": 0.6
+    },
+    "api_version": "1.8.0-prototype",
+    "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+    "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+    "prototype_alert": true,
+    "official_warning": false,
+    "calibrated_probability": false,
+    "limitations": [
+      "Research prototype; not an operational warning service.",
+      "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+      "The learned classifier score is not a calibrated probability.",
+      "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+      "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+      "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+      "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+      "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+      "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+      "All prototype alerts require human review; the API never authorizes public or official warning release."
+    ]
+  },
+  "96": {
+    "schema": "trace-impact-object/1.5",
+    "event_id": "BULBUL_2019",
+    "valid_time": "2019-11-09T00:00:00+00:00",
+    "forecast_lead_hours": 96,
+    "prototype_severity": "SEVERE",
+    "macro_threat_footprint_geojson": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            84.75,
+            13.5
+          ],
+          [
+            85.75,
+            13.0
+          ],
+          [
+            86.0,
+            13.0
+          ],
+          [
+            88.75,
+            14.0
+          ],
+          [
+            94.25,
+            17.25
+          ],
+          [
+            94.25,
+            18.25
+          ],
+          [
+            93.25,
+            20.0
+          ],
+          [
+            91.25,
+            22.5
+          ],
+          [
+            91.0,
+            22.75
+          ],
+          [
+            89.0,
+            24.0
+          ],
+          [
+            88.0,
+            24.25
+          ],
+          [
+            84.0,
+            23.25
+          ],
+          [
+            83.5,
+            23.0
+          ],
+          [
+            81.25,
+            21.75
+          ],
+          [
+            79.0,
+            18.0
+          ],
+          [
+            78.75,
+            17.5
+          ],
+          [
+            79.0,
+            17.25
+          ],
+          [
+            84.75,
+            13.5
+          ]
+        ]
+      ]
+    },
+    "macro_footprint_area_km2": 995564.6773583628,
+    "anomaly_core_coordinate": {
+      "lat": 17.75,
+      "lon": 87.5,
+      "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+    },
+    "display_marker_radius_km": 5.0,
+    "predicted_impact_radius_km": null,
+    "display_marker_meaning": "UI locator only; not modeled hazard extent and not Stage-2 output",
+    "model_evidence": {
+      "model": "wind spherical GNN, frozen 5-seed consensus",
+      "mean_seed_agreement_over_footprint": 0.9473916238060249,
+      "core_seed_agreement": 1.0,
+      "core_classifier_score_not_calibrated_probability": 0.9768164753913879,
+      "max_ensemble_mean_wind_ms": 19.31505584716797,
+      "max_member_support_fraction": 0.6,
+      "max_member_climate_support_fraction": 1.0,
+      "max_efi": 0.874973364332168,
+      "max_sot": 4.050203722711271,
+      "max_wind_minus_climate_q99_ms": 6.832667322158816
+    },
+    "stage2_route": {
+      "benchmark_type": "controlled HRRR 12->5 km reconstruction; not operational India/NEPS-G forecast verification",
+      "primary_route": "deterministic mean + exact coarse projection",
+      "primary_metrics": {
+        "speed_mae_ms": 0.3178,
+        "q99_abs_error_ms": 0.1673,
+        "threshold_iou": 0.5846,
+        "exact_projected_coarse_uv_error": "~ machine zero"
+      },
+      "safety_diffusion_v3": {
+        "role": "complementary",
+        "fair_crps_ms": 0.2602,
+        "unresolved_psd_error": 0.2351,
+        "spread_skill_ratio": 1.52,
+        "far_field_extreme_sample_frame_fraction": 0.139
+      },
+      "physics_tail_v4": {
+        "implemented": true,
+        "adopted": false,
+        "reason": "failed pre-registered adoption gate; full PDE/thermodynamic conservation is not demonstrated"
+      },
+      "router": "deterministic primary; diffusion only behind diagnostics"
+    },
+    "stage2_transition_label": "software handoff only; same-event BULBUL 12->5 km skill is not claimed",
+    "provenance": {
+      "sample_sha256": "263c86e51028a4d183105b4f00d438b3c1d73acbf68f95028270ec4aeb52eba8",
+      "checkpoint_sha256_by_seed": {
+        "1": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+        "2": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+        "3": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+        "4": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+        "5": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57"
+      },
+      "prediction_consensus_threshold": 0.6
+    },
+    "api_version": "1.8.0-prototype",
+    "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+    "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+    "prototype_alert": true,
+    "official_warning": false,
+    "calibrated_probability": false,
+    "limitations": [
+      "Research prototype; not an operational warning service.",
+      "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+      "The learned classifier score is not a calibrated probability.",
+      "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+      "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+      "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+      "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+      "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+      "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+      "All prototype alerts require human review; the API never authorizes public or official warning release."
+    ]
+  },
+  "120": {
+    "schema": "trace-impact-object/1.5",
+    "event_id": "BULBUL_2019",
+    "valid_time": "2019-11-09T00:00:00+00:00",
+    "forecast_lead_hours": 120,
+    "prototype_severity": "SEVERE",
+    "macro_threat_footprint_geojson": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            88.5,
+            27.5
+          ],
+          [
+            80.0,
+            21.75
+          ],
+          [
+            77.5,
+            11.25
+          ],
+          [
+            77.5,
+            11.0
+          ],
+          [
+            78.0,
+            11.0
+          ],
+          [
+            86.25,
+            12.0
+          ],
+          [
+            87.0,
+            12.25
+          ],
+          [
+            89.25,
+            13.25
+          ],
+          [
+            90.25,
+            13.75
+          ],
+          [
+            94.75,
+            17.0
+          ],
+          [
+            94.75,
+            17.25
+          ],
+          [
+            94.5,
+            18.0
+          ],
+          [
+            94.25,
+            18.5
+          ],
+          [
+            89.75,
+            27.0
+          ],
+          [
+            89.25,
+            27.25
+          ],
+          [
+            88.5,
+            27.5
+          ]
+        ]
+      ]
+    },
+    "macro_footprint_area_km2": 1336709.579524687,
+    "anomaly_core_coordinate": {
+      "lat": 17.75,
+      "lon": 88.5,
+      "meaning": "model anomaly core; NOT an exact cyclone-center estimate"
+    },
+    "display_marker_radius_km": 5.0,
+    "predicted_impact_radius_km": null,
+    "display_marker_meaning": "UI locator only; not modeled hazard extent and not Stage-2 output",
+    "model_evidence": {
+      "model": "wind spherical GNN, frozen 5-seed consensus",
+      "mean_seed_agreement_over_footprint": 0.9246582832148714,
+      "core_seed_agreement": 1.0,
+      "core_classifier_score_not_calibrated_probability": 0.9739474058151245,
+      "max_ensemble_mean_wind_ms": 17.764413833618164,
+      "max_member_support_fraction": 0.6,
+      "max_member_climate_support_fraction": 1.0,
+      "max_efi": 0.874973364332168,
+      "max_sot": 7.322123032657486,
+      "max_wind_minus_climate_q99_ms": 5.800008230209352
+    },
+    "stage2_route": {
+      "benchmark_type": "controlled HRRR 12->5 km reconstruction; not operational India/NEPS-G forecast verification",
+      "primary_route": "deterministic mean + exact coarse projection",
+      "primary_metrics": {
+        "speed_mae_ms": 0.3178,
+        "q99_abs_error_ms": 0.1673,
+        "threshold_iou": 0.5846,
+        "exact_projected_coarse_uv_error": "~ machine zero"
+      },
+      "safety_diffusion_v3": {
+        "role": "complementary",
+        "fair_crps_ms": 0.2602,
+        "unresolved_psd_error": 0.2351,
+        "spread_skill_ratio": 1.52,
+        "far_field_extreme_sample_frame_fraction": 0.139
+      },
+      "physics_tail_v4": {
+        "implemented": true,
+        "adopted": false,
+        "reason": "failed pre-registered adoption gate; full PDE/thermodynamic conservation is not demonstrated"
+      },
+      "router": "deterministic primary; diffusion only behind diagnostics"
+    },
+    "stage2_transition_label": "software handoff only; same-event BULBUL 12->5 km skill is not claimed",
+    "provenance": {
+      "sample_sha256": "d65b462566d83dfcdd00cb715d028d3bd11a3d4b5d8296247e3b38fa11997de1",
+      "checkpoint_sha256_by_seed": {
+        "1": "4dfcc031dde106d1729a6ea6f4c9724bf7a758f608d2519379c2801080186abb",
+        "2": "3ee738c5939cd4d912ccfda693efbedd953c39e51de36158b392d44c3da40533",
+        "3": "649e60168040e175bf42aa39dd753cc4a5098faab44da89d3994e59debe908fd",
+        "4": "e527b7c2e77110196008373ddfeea9e8accaee6f0898ebcbd96c36695154fa9f",
+        "5": "adea5cc9937db6d6c435ded29dd9c6349f94b12b0b907aadeddd55e2c5b6bc57"
+      },
+      "prediction_consensus_threshold": 0.6
+    },
+    "api_version": "1.8.0-prototype",
+    "model_version": "trace-wind-spherical-gnn-bulbul-frozen-5seed",
+    "evidence_version": "bulbul2019-alert-evidence-v1-fani-temporal-v1-stage2-controlled-hrrr-v3-governance-v1",
+    "prototype_alert": true,
+    "official_warning": false,
+    "calibrated_probability": false,
+    "limitations": [
+      "Research prototype; not an operational warning service.",
+      "Severity tiers are transparent prototype categories, not official IMD/NCMRWF warnings.",
+      "The learned classifier score is not a calibrated probability.",
+      "GEFSv12 is a prototype substitute; direct NEPS-G validation is not included.",
+      "The anomaly core is a model evidence coordinate, not an exact cyclone-center estimate.",
+      "The 5 km map ring is a UI locator marker only, not a predicted hazard/impact radius and not Stage-2 output.",
+      "Stage-2 HRRR evidence is controlled reconstruction, not same-event BULBUL downscaling skill.",
+      "Sequential FANI wind-footprint tracking was executed, but its centroids are not validated cyclone centers and errors remain large.",
+      "Physics-aware constraints and diagnostics were tested; full thermodynamic/PDE conservation is not demonstrated.",
+      "All prototype alerts require human review; the API never authorizes public or official warning release."
+    ]
+  }
+}
